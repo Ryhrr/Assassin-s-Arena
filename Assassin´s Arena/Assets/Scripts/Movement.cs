@@ -34,14 +34,26 @@ public class NewBehaviourScript : MonoBehaviour
         
 
 
-
-        myRidgidbody.velocity = new Vector2(MoveHorizontal * MoveSpeed, myRidgidbody.velocity.y);
-
-
-        myRidgidbody.velocity = new Vector2(MoveVertical * MoveSpeed, myRidgidbody.velocity.x);
-
         
+        if(Input.GetKey(KeyCode.W) == true & Input.GetKey(KeyCode.D) == true || Input.GetKey(KeyCode.W) == true & Input.GetKey(KeyCode.A) == true || Input.GetKey(KeyCode.S) == true & Input.GetKey(KeyCode.A) == true || Input.GetKey(KeyCode.S) == true & Input.GetKey(KeyCode.D) == true)
+        {
 
+            MoveSpeed = MoveSpeed / 1.5f;
+
+            myRidgidbody.velocity = new Vector2(MoveHorizontal * MoveSpeed, myRidgidbody.velocity.y);
+
+
+            myRidgidbody.velocity = new Vector2(MoveVertical * MoveSpeed, myRidgidbody.velocity.x);
+
+            MoveSpeed = MoveSpeed * 1.5f;
+        }
+        else
+        {
+            myRidgidbody.velocity = new Vector2(MoveHorizontal * MoveSpeed, myRidgidbody.velocity.y);
+
+
+            myRidgidbody.velocity = new Vector2(MoveVertical * MoveSpeed, myRidgidbody.velocity.x);
+        }
 
 
 
