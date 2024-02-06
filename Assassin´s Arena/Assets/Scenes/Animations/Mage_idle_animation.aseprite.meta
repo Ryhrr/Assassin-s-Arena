@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: f88ae8c664c19394f8cd5734afd07666
+guid: 067ed06a37d4694439d9cd838c35c06b
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -121,7 +121,7 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: Mage_animation_Frame_0
+  - name: Mage_idle_animation
     originalName: 
     pivot: {x: 0.42105263, y: -0.2857143}
     alignment: 9
@@ -132,7 +132,7 @@ ScriptedImporter:
       y: 4
       width: 19
       height: 35
-    spriteID: f19537d313cc05541986b6612d86d2bd
+    spriteID: 2c56f8ef66e64b540b2f6c2db6a9fae9
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -141,49 +141,9 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 4, y: 4}
-  - name: Mage_animation_Frame_1
+  - name: Mage_idle_animation_Frame_1
     originalName: 
-    pivot: {x: 0.42105263, y: -0.32352942}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 90
-      width: 19
-      height: 34
-    spriteID: d51d6a9087036814d925f6a0c2f98c76
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 4, y: 90}
-  - name: Mage_animation_Frame_2
-    originalName: 
-    pivot: {x: 0.42105263, y: -0.2857143}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 47
-      width: 19
-      height: 35
-    spriteID: 0c4e0a331df7c834997c58832f4d77f8
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 4, y: 47}
-  - name: Mage_animation_Frame_3
-    originalName: 
-    pivot: {x: 0.42105263, y: -0.2857143}
+    pivot: {x: 0.42105263, y: -0.29411766}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -191,8 +151,8 @@ ScriptedImporter:
       x: 31
       y: 4
       width: 19
-      height: 35
-    spriteID: 8742d1dce16c76c499c56550bb56a279
+      height: 34
+    spriteID: 936fc373ce79f6548a6bd6fb75ed4d8e
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -204,44 +164,28 @@ ScriptedImporter:
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    guid: -2052328425
-    name: Mage_animation
+    guid: -618856810
+    name: Mage_idle_animation
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: Mage_animation_Frame_0
+    - name: Mage_idle_animation_Frame_0
       frameIndex: 0
       cellRect:
         x: 24
         y: 10
         width: 19
         height: 35
-      spriteId: f19537d313cc05541986b6612d86d2bd
-    - name: Mage_animation_Frame_1
+      spriteId: 2c56f8ef66e64b540b2f6c2db6a9fae9
+    - name: Mage_idle_animation_Frame_1
       frameIndex: 1
       cellRect:
         x: 24
-        y: 11
+        y: 10
         width: 19
         height: 34
-      spriteId: d51d6a9087036814d925f6a0c2f98c76
-    - name: Mage_animation_Frame_2
-      frameIndex: 2
-      cellRect:
-        x: 24
-        y: 10
-        width: 19
-        height: 35
-      spriteId: 0c4e0a331df7c834997c58832f4d77f8
-    - name: Mage_animation_Frame_3
-      frameIndex: 3
-      cellRect:
-        x: 24
-        y: 10
-        width: 19
-        height: 35
-      spriteId: 8742d1dce16c76c499c56550bb56a279
+      spriteId: 936fc373ce79f6548a6bd6fb75ed4d8e
     linkedCells: []
     parentIndex: -1
   platformSettings: []
