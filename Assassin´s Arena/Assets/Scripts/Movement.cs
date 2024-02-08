@@ -28,6 +28,7 @@ public class NewBehaviourScript : MonoBehaviour
     {
 
 
+
         MoveHorizontal = Input.GetAxisRaw("Vertical");
         MoveVertical = Input.GetAxisRaw("Horizontal");
 
@@ -46,6 +47,7 @@ public class NewBehaviourScript : MonoBehaviour
             myRidgidbody.velocity = new Vector2(MoveVertical * MoveSpeed, myRidgidbody.velocity.x);
 
             MoveSpeed = MoveSpeed * 1.5f;
+
         }
         else
         {
