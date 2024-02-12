@@ -8,6 +8,7 @@ public class NewBehaviourScript : MonoBehaviour
     public Rigidbody2D myRidgidbody;
     public Animator animator;
 
+
     public float MoveSpeed = 10.0f;
 
     private float MoveHorizontal = 1f;
