@@ -6,7 +6,7 @@ public class NewBehaviourScript : MonoBehaviour
 {
 
     public Rigidbody2D myRidgidbody;
-    
+    public Animator animator;
 
     public float MoveSpeed = 10.0f;
 
@@ -32,7 +32,16 @@ public class NewBehaviourScript : MonoBehaviour
         MoveHorizontal = Input.GetAxisRaw("Vertical");
         MoveVertical = Input.GetAxisRaw("Horizontal");
 
-        
+        if(MoveVertical >= 1 || MoveHorizontal >= 1)
+        {
+
+            animator.SetFloat("Speed", 1);
+
+        }
+        else
+        {
+            animator.SetFloat("Speed", 0);
+        }
 
 
         
