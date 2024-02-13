@@ -123,7 +123,7 @@ ScriptedImporter:
   animatedSpriteImportData:
   - name: Mage_feuer_animation_Frame_0
     originalName: 
-    pivot: {x: 0.43589744, y: -0.7111111}
+    pivot: {x: 1.5243174, y: -2.890772}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
