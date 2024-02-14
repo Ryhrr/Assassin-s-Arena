@@ -1,18 +1,70 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class Ability_Holder : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+
+    public Abilities abilitiy;
+    float cooldownTime;
+    float activeTime;
+
+    enum AbilityState
     {
-        
+        ready,
+        active,
+        cooldown
     }
 
-    // Update is called once per frame
-    void Update()
+    AbilityState state = AbilityState.ready;
+
+    public KeyCode key;
+
+
+    private void Update()
     {
-        
+
+        switch (state) {
+
+            case AbilityState.ready:
+
+                if (Input.GetKey(key))
+                {
+                    abilitiy.Activate();
+                    state = AbilityState.active;
+                    activeTime = abilitiy.activeTime;
+                }
+
+                break;
+            case AbilityState.active:
+
+                if(activeTime > 0)
+                {
+                    activeTime -= Time.deltaTime; 
+                }
+                else
+                {
+                    state = AbilityState.cooldown;
+                    cooldownTime = abilitiy.cooldownTime;
+                }
+
+
+                break;
+            case AbilityState.cooldown:
+
+                if (activeTime > 0)
+                {
+                    activeTime -= Time.deltaTime;
+                }
+                else
+                {
+                    state = AbilityState.ready;
+                }
+                break;
+        }
+
+       
     }
+
 }
