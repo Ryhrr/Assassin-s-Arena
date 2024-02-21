@@ -123,7 +123,7 @@ ScriptedImporter:
   animatedSpriteImportData:
   - name: Mage_feuer_animation_Frame_0
     originalName: 
-    pivot: {x: 1.5243174, y: -2.890772}
+    pivot: {x: 0.47407103, y: 0.61797893}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -143,7 +143,7 @@ ScriptedImporter:
     uvTransform: {x: 126, y: 186}
   - name: Mage_feuer_animation_Frame_1
     originalName: 
-    pivot: {x: 0.48387095, y: -0.40000004}
+    pivot: {x: 0.50866574, y: 0.59253365}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -163,7 +163,7 @@ ScriptedImporter:
     uvTransform: {x: 126, y: 118}
   - name: Mage_feuer_animation_Frame_2
     originalName: 
-    pivot: {x: 0.44705883, y: -0.116279066}
+    pivot: {x: 0.46418062, y: 0.57497084}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -183,9 +183,9 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 124}
   - name: Mage_feuer_animation_Frame_3
     originalName: 
-    pivot: {x: 0.4385965, y: -0.008928572}
+    pivot: {x: 0.45129824, y: 0.5223872}
     alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
+    border: {x: 1, y: 0, z: 3, w: 0}
     rect:
       serializedVersion: 2
       x: 4
@@ -203,7 +203,7 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 4}
   - name: Mage_feuer_animation_Frame_4
     originalName: 
-    pivot: {x: 0.49565214, y: -0.056603774}
+    pivot: {x: 0.5087934, y: 0.5071551}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -223,8 +223,8 @@ ScriptedImporter:
     uvTransform: {x: 126, y: 4}
   - name: Mage_feuer_animation_Frame_5
     originalName: 
-    pivot: {x: 0.42105263, y: -1.2647059}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -243,8 +243,8 @@ ScriptedImporter:
     uvTransform: {x: 97, y: 167}
   - name: Mage_feuer_animation_Frame_6
     originalName: 
-    pivot: {x: 0.42105263, y: -1.2647059}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -263,8 +263,8 @@ ScriptedImporter:
     uvTransform: {x: 97, y: 209}
   - name: Mage_feuer_animation_Frame_7
     originalName: 
-    pivot: {x: 0.42105263, y: -1.2647059}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -283,8 +283,8 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 218}
   - name: Mage_feuer_animation_Frame_8
     originalName: 
-    pivot: {x: 0.42105263, y: -1.2}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -303,8 +303,8 @@ ScriptedImporter:
     uvTransform: {x: 97, y: 124}
   - name: Mage_feuer_animation_Frame_9
     originalName: 
-    pivot: {x: 0.42105263, y: -1.2647059}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2

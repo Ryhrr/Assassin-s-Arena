@@ -7,8 +7,20 @@ public class Ability_Holder : MonoBehaviour
 {
 
     public Abilities abilitiy;
+    public Animator animator;
     float cooldownTime;
     float activeTime;
+
+
+    private void Start()
+    {
+        animator = GetComponent<Animator>();
+
+        abilitiy = GetComponent<Abilities>();
+
+
+    }
+
 
     enum AbilityState
     {
@@ -16,6 +28,8 @@ public class Ability_Holder : MonoBehaviour
         active,
         cooldown
     }
+
+   
 
     AbilityState state = AbilityState.ready;
 
@@ -25,21 +39,24 @@ public class Ability_Holder : MonoBehaviour
     private void Update()
     {
 
+
         switch (state) {
 
             case AbilityState.ready:
 
                 if (Input.GetKey(key))
                 {
-                    abilitiy.Activate();
+                    abilitiy.Activate(gameObject);
                     state = AbilityState.active;
                     activeTime = abilitiy.activeTime;
+
                 }
 
                 break;
             case AbilityState.active:
 
-                if(activeTime > 0)
+
+                if (activeTime > 0)
                 {
                     activeTime -= Time.deltaTime; 
                 }
@@ -53,6 +70,8 @@ public class Ability_Holder : MonoBehaviour
                 break;
             case AbilityState.cooldown:
 
+                animator.SetBool("Q", false);
+
                 if (activeTime > 0)
                 {
                     activeTime -= Time.deltaTime;
@@ -64,7 +83,11 @@ public class Ability_Holder : MonoBehaviour
                 break;
         }
 
-       
-    }
+
+
+        
+
+
+    }   
 
 }

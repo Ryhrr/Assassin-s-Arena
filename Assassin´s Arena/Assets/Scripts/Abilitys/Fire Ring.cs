@@ -1,18 +1,31 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
+using UnityEngine.UIElements;
 
-public class FireRing : MonoBehaviour
+[CreateAssetMenu]
+public class FireRing : Abilities
 {
-    // Start is called before the first frame update
-    void Start()
+    public float Range;
+
+    
+    public override void Activate(GameObject parent)
     {
-        
+        Animator animator = parent.GetComponent<Animator>();
+
+        animator.SetFloat("Ability", 1);
+
+
+        if (Input.GetKeyDown(KeyCode.Q))
+        {
+           
+            animator.SetBool("Q", true);
+
+            
+        }
+       
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
