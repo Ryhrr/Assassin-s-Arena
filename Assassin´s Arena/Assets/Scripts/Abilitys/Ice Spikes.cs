@@ -1,27 +1,21 @@
-using JetBrains.Annotations;
-using System;
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor;
 using UnityEngine;
-using UnityEngine.UIElements;
 
 [CreateAssetMenu]
-public class FireRing : Abilities
+public class IceSpikes : Abilities
 {
-    
+
     public float Range;
+
 
     public override void Activate(GameObject parent)
     {
         Animator animator = parent.GetComponent<Animator>();
 
+        animator.SetFloat("Ability", 2);
+        animator.SetBool("Key", true);
 
-            animator.SetBool("Key", true);
-            animator.SetFloat("Ability", 1);
 
-        
-       
     }
-
 }

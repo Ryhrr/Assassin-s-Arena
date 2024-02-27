@@ -70,7 +70,8 @@ public class Ability_Holder : MonoBehaviour
                 break;
             case AbilityState.cooldown:
 
-                animator.SetBool("Q", false);
+                animator.SetBool("Key", false);
+                
 
                 if (activeTime > 0)
                 {
