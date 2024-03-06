@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class Ability_Holder : MonoBehaviour
 {
-
+    public Transform transform;
     public Abilities abilitiy;
     public Animator animator;
     float cooldownTime;
@@ -18,7 +18,7 @@ public class Ability_Holder : MonoBehaviour
 
         abilitiy = GetComponent<Abilities>();
 
-
+        transform = GetComponent<Transform>();
     }
 
 
