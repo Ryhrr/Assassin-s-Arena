@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.U2D;
 
+
 public class NewBehaviourScript : MonoBehaviour
 {
 
@@ -37,28 +38,28 @@ public class NewBehaviourScript : MonoBehaviour
         MoveVertical = Input.GetAxisRaw("Horizontal");
 
 
-        if (MoveHorizontal < 0f )
+        if (Input.GetKey(KeyCode.W) == true)
         {
             animator.SetBool("running", true);
-            sprite.flipX = false;
         }
-        else if ( MoveVertical < 0f)
+        else if (Input.GetKey(KeyCode.S) == true)
         {
-
             animator.SetBool("running", true);
-            sprite.flipX = false;
-
         }
-        else if (MoveHorizontal > 0f || MoveVertical > 0f)
+        else if (Input.GetKey(KeyCode.D) == true)
         {
             animator.SetBool("running", true);
             sprite.flipX = true;
+        }
+        else if(Input.GetKey(KeyCode.A) == true)
+        {
+            animator.SetBool("running", true);
+            sprite.flipX = false;
         }
         else
         {
             animator.SetBool("running", false);
         }
-
 
 
         if (Input.GetKey(KeyCode.W) == true & Input.GetKey(KeyCode.D) == true || Input.GetKey(KeyCode.W) == true & Input.GetKey(KeyCode.A) == true || Input.GetKey(KeyCode.S) == true & Input.GetKey(KeyCode.A) == true || Input.GetKey(KeyCode.S) == true & Input.GetKey(KeyCode.D) == true)
