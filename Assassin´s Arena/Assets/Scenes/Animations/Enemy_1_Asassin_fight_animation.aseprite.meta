@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: c058b3d4702cf90458e4b51cd6b20dcc
+guid: f0754f844deed4940b66a24155407482
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -121,9 +121,9 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: Enemy_1_Asassin
+  - name: Enemy_1_Asassin_fight_animation
     originalName: 
-    pivot: {x: 0.6290626, y: 0.50242233}
+    pivot: {x: 0.6875, y: -0.38709676}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -132,7 +132,7 @@ ScriptedImporter:
       y: 4
       width: 32
       height: 31
-    spriteID: 34dc291de42f1bf4788f56f705d79d17
+    spriteID: a19b89d70624d9a468dca2de0eac80a4
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -144,20 +144,20 @@ ScriptedImporter:
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    guid: -1223516001
-    name: Enemy_1_Asassin
+    guid: 606994405
+    name: Enemy_1_Asassin_fight_animation
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: Enemy_1_Asassin
+    - name: Enemy_1_Asassin_fight_animation
       frameIndex: 0
       cellRect:
         x: 10
         y: 12
         width: 32
         height: 31
-      spriteId: 34dc291de42f1bf4788f56f705d79d17
+      spriteId: a19b89d70624d9a468dca2de0eac80a4
     linkedCells: []
     parentIndex: -1
   platformSettings: []
