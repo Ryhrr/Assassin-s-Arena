@@ -123,8 +123,8 @@ ScriptedImporter:
   animatedSpriteImportData:
   - name: Enemy_1_Asassin_walk_animation_Frame_0
     originalName: 
-    pivot: {x: 0.6875, y: -0.38709676}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -143,8 +143,8 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 4}
   - name: Enemy_1_Asassin_walk_animation_Frame_1
     originalName: 
-    pivot: {x: 0.7037037, y: -0.38709676}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -163,8 +163,8 @@ ScriptedImporter:
     uvTransform: {x: 44, y: 4}
   - name: Enemy_1_Asassin_walk_animation_Frame_2
     originalName: 
-    pivot: {x: 0.76, y: -0.38709676}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -183,8 +183,8 @@ ScriptedImporter:
     uvTransform: {x: 79, y: 4}
   - name: Enemy_1_Asassin_walk_animation_Frame_3
     originalName: 
-    pivot: {x: 0.7222222, y: -0.375}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -203,8 +203,8 @@ ScriptedImporter:
     uvTransform: {x: 38, y: 43}
   - name: Enemy_1_Asassin_walk_animation_Frame_4
     originalName: 
-    pivot: {x: 0.75, y: -0.38709676}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -223,8 +223,8 @@ ScriptedImporter:
     uvTransform: {x: 90, y: 43}
   - name: Enemy_1_Asassin_walk_animation_Frame_5
     originalName: 
-    pivot: {x: 0.6666667, y: -0.38709676}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -243,8 +243,8 @@ ScriptedImporter:
     uvTransform: {x: 64, y: 43}
   - name: Enemy_1_Asassin_walk_animation_Frame_6
     originalName: 
-    pivot: {x: 0.6538462, y: -0.34375}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2

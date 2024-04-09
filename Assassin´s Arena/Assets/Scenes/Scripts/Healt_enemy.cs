@@ -5,23 +5,18 @@ using UnityEngine;
 public class Healt_enemy : MonoBehaviour
 {
 
-    public BoxCollider2D BoxCollider2D;
+    public CircleCollider2D CircleCollider2D;
     // Start is called before the first frame update
     void Start()
     {
-        BoxCollider2D = GetComponent<BoxCollider2D>();
+        CircleCollider2D = GetComponent<CircleCollider2D>();
     }
 
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.tag != "Enemy")
-        {
-            gameObject.transform.parent = collision.gameObject.transform;
-            GetComponent<CircleCollider2D>().enabled = false;
-
-        }
-        if (collision.tag == "Mage")
+       
+        if (collision.tag == "Player")
         {
             var healthComponent = collision.GetComponent<Health>();
             if (healthComponent != null)
@@ -29,5 +24,23 @@ public class Healt_enemy : MonoBehaviour
                 healthComponent.Damage(1);
             }
         }
+    }
+
+
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if (collision.tag == "Player")
+        {
+            var healthComponent = collision.GetComponent<Health>();
+            if (healthComponent != null)
+            {
+                healthComponent.Damage(1);
+            }
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        
     }
 }
