@@ -9,21 +9,28 @@ public class Health : MonoBehaviour
     public int currentHealth;
 
     public Animator anim;
+    public NewBehaviourScript Behaviour;
     // Start is called before the first frame update
     void Start()
     {
         currentHealth = 100;
-    }
+        anim = GetComponent<Animator>();
+        Behaviour = GetComponent<NewBehaviourScript>();
+    }   
 
 
     public void Damage(int amount)
     {
+
         currentHealth -= amount;
 
-        if(currentHealth <= 0)
+        if (currentHealth <= 0)
         {
             //dead :(
-            anim.SetBool("dead", true);
+            anim.SetBool("Dead", true);
+            Behaviour.MoveSpeed = 0;
+
+            
         }
     }
 }

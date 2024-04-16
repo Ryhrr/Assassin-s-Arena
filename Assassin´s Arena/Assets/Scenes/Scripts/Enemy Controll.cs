@@ -8,8 +8,7 @@ public class EnemyControll : MonoBehaviour
     private Animator anim;
     private Transform target;
     private SpriteRenderer sprite;
-    [SerializeField]
-    private float speed;
+    public float speed;
     [SerializeField]
     private float range;
     [SerializeField]
@@ -26,9 +25,11 @@ public class EnemyControll : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Vector3.Distance(target.position, transform.position) >= minRange)
+        if(Vector3.Distance(target.position, transform.position)>= minRange)
         {
             FollowPlayer();
+
+
         }
         
     }
@@ -38,6 +39,10 @@ public class EnemyControll : MonoBehaviour
         if(target.position.x - transform.position.x <= -0.001)
         {
             sprite.flipX = true;
+        }
+        else
+        {
+            sprite.flipX = false;
         }
        
         transform.position = Vector3.MoveTowards(transform.position, target.position, speed * Time.deltaTime);

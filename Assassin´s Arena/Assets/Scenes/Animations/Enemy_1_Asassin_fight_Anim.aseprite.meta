@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: cd670937d5f63c84fb73316caef04a96
+guid: 578a0d13f3a56974fad45c27134b74e3
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -121,18 +121,38 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: Magier_Death_anim_Frame_0
+  - name: Enemy_1_Asassin_fight_Anim_Frame_0
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 87
+      y: 45
+      width: 32
+      height: 31
+    spriteID: 013b63646f974fc41b734bf4d09f20f6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 87, y: 45}
+  - name: Enemy_1_Asassin_fight_Anim_Frame_1
+    originalName: 
+    pivot: {x: 0.5383742, y: 0.47833696}
+    alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
-      y: 79
-      width: 19
-      height: 35
-    spriteID: e088c0e9c2221fd40b259fe0bce1da71
+      y: 137
+      width: 35
+      height: 31
+    spriteID: ae90cf4014d5c3540acfba0c22fd0de9
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -140,59 +160,19 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 79}
-  - name: Magier_Death_anim_Frame_1
+    uvTransform: {x: 4, y: 137}
+  - name: Enemy_1_Asassin_fight_Anim_Frame_2
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 85
-      y: 32
-      width: 20
-      height: 33
-    spriteID: 438b9bc4ee1821344973bb0b47e930dd
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 85, y: 32}
-  - name: Magier_Death_anim_Frame_2
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 85
-      y: 73
-      width: 21
-      height: 30
-    spriteID: ba69403730f56ca48b931bf810c4d539
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 85, y: 73}
-  - name: Magier_Death_anim_Frame_3
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0.587301, y: 0.47833744}
+    alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
-      y: 41
-      width: 23
-      height: 30
-    spriteID: 9cd73c05baccbea4b8cd3cc04407cf12
+      y: 51
+      width: 40
+      height: 31
+    spriteID: c157e45891af08e44b8df52d4f9579fe
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -200,19 +180,79 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 41}
-  - name: Magier_Death_anim_Frame_4
+    uvTransform: {x: 4, y: 51}
+  - name: Enemy_1_Asassin_fight_Anim_Frame_3
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0.55820066, y: 0.40012887}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 90
+      width: 30
+      height: 39
+    spriteID: 70471ae19e52c9d4ea92544c15088640
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 90}
+  - name: Enemy_1_Asassin_fight_Anim_Frame_4
+    originalName: 
+    pivot: {x: 0.58456534, y: 0.38747033}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 52
+      y: 45
+      width: 27
+      height: 37
+    spriteID: 6797845404dd0f447a914999ba554a3b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 52, y: 45}
+  - name: Enemy_1_Asassin_fight_Anim_Frame_5
+    originalName: 
+    pivot: {x: 0.60695183, y: 0.38178977}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 176
+      width: 28
+      height: 38
+    spriteID: 12c9fde05fe30214f86a463f8dd0d233
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 176}
+  - name: Enemy_1_Asassin_fight_Anim_Frame_6
+    originalName: 
+    pivot: {x: 0.35775322, y: 0.338749}
+    alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 30
-      height: 29
-    spriteID: 53b0899db359d7b46b16dd15aa3a5c2d
+      width: 40
+      height: 39
+    spriteID: aa4857cd960f17b42b705e77cc21510b
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -221,18 +261,18 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 4, y: 4}
-  - name: Magier_Death_anim_Frame_5
+  - name: Enemy_1_Asassin_fight_Anim_Frame_7
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0.35391924, y: 0.41832757}
+    alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 42
+      x: 52
       y: 4
-      width: 35
-      height: 21
-    spriteID: 9d431e8951c20fa43b8257b24507e738
+      width: 41
+      height: 33
+    spriteID: 3ec8d3a04478f3040b448618904ac43b
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -240,176 +280,80 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 42, y: 4}
-  - name: Magier_Death_anim_Frame_6
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 42
-      y: 33
-      width: 35
-      height: 21
-    spriteID: ac80cd0cbd89b28459d3a843eec47f42
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 42, y: 33}
-  - name: Magier_Death_anim_Frame_7
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 42
-      y: 62
-      width: 35
-      height: 21
-    spriteID: bfa25d9447bae0b4eb36f94241365bfe
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 42, y: 62}
-  - name: Magier_Death_anim_Frame_8
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 42
-      y: 91
-      width: 35
-      height: 21
-    spriteID: 6fd8070ce5d4bbd4d9b2f4077d8bc346
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 42, y: 91}
-  - name: Magier_Death_anim_Frame_9
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 85
-      y: 4
-      width: 35
-      height: 20
-    spriteID: c3cb48560d8866845b028c0ffd9bab85
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 85, y: 4}
+    uvTransform: {x: 52, y: 4}
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    guid: -1622743822
-    name: Magier_Death_anim
+    guid: -485288874
+    name: Enemy_1_Asassin_fight_Anim
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: Magier_Death_anim_Frame_0
+    - name: Enemy_1_Asassin_fight_Anim_Frame_0
       frameIndex: 0
       cellRect:
-        x: 24
-        y: 10
-        width: 19
-        height: 35
-      spriteId: e088c0e9c2221fd40b259fe0bce1da71
-    - name: Magier_Death_anim_Frame_1
+        x: 10
+        y: 12
+        width: 32
+        height: 31
+      spriteId: 013b63646f974fc41b734bf4d09f20f6
+    - name: Enemy_1_Asassin_fight_Anim_Frame_1
       frameIndex: 1
       cellRect:
-        x: 23
-        y: 10
-        width: 20
-        height: 33
-      spriteId: 438b9bc4ee1821344973bb0b47e930dd
-    - name: Magier_Death_anim_Frame_2
+        x: 7
+        y: 12
+        width: 35
+        height: 31
+      spriteId: ae90cf4014d5c3540acfba0c22fd0de9
+    - name: Enemy_1_Asassin_fight_Anim_Frame_2
       frameIndex: 2
       cellRect:
-        x: 22
-        y: 10
-        width: 21
-        height: 30
-      spriteId: ba69403730f56ca48b931bf810c4d539
-    - name: Magier_Death_anim_Frame_3
+        x: 2
+        y: 12
+        width: 40
+        height: 31
+      spriteId: c157e45891af08e44b8df52d4f9579fe
+    - name: Enemy_1_Asassin_fight_Anim_Frame_3
       frameIndex: 3
       cellRect:
-        x: 20
-        y: 9
-        width: 23
-        height: 30
-      spriteId: 9cd73c05baccbea4b8cd3cc04407cf12
-    - name: Magier_Death_anim_Frame_4
+        x: 9
+        y: 12
+        width: 30
+        height: 39
+      spriteId: 70471ae19e52c9d4ea92544c15088640
+    - name: Enemy_1_Asassin_fight_Anim_Frame_4
       frameIndex: 4
       cellRect:
-        x: 13
-        y: 7
-        width: 30
-        height: 29
-      spriteId: 53b0899db359d7b46b16dd15aa3a5c2d
-    - name: Magier_Death_anim_Frame_5
+        x: 9
+        y: 12
+        width: 27
+        height: 37
+      spriteId: 6797845404dd0f447a914999ba554a3b
+    - name: Enemy_1_Asassin_fight_Anim_Frame_5
       frameIndex: 5
       cellRect:
         x: 9
-        y: 6
-        width: 35
-        height: 21
-      spriteId: 9d431e8951c20fa43b8257b24507e738
-    - name: Magier_Death_anim_Frame_6
+        y: 12
+        width: 28
+        height: 38
+      spriteId: 12c9fde05fe30214f86a463f8dd0d233
+    - name: Enemy_1_Asassin_fight_Anim_Frame_6
       frameIndex: 6
       cellRect:
-        x: 9
-        y: 6
-        width: 35
-        height: 21
-      spriteId: ac80cd0cbd89b28459d3a843eec47f42
-    - name: Magier_Death_anim_Frame_7
+        x: 17
+        y: 13
+        width: 40
+        height: 39
+      spriteId: aa4857cd960f17b42b705e77cc21510b
+    - name: Enemy_1_Asassin_fight_Anim_Frame_7
       frameIndex: 7
       cellRect:
-        x: 9
-        y: 6
-        width: 35
-        height: 21
-      spriteId: bfa25d9447bae0b4eb36f94241365bfe
-    - name: Magier_Death_anim_Frame_8
-      frameIndex: 8
-      cellRect:
-        x: 9
-        y: 6
-        width: 35
-        height: 21
-      spriteId: 6fd8070ce5d4bbd4d9b2f4077d8bc346
-    - name: Magier_Death_anim_Frame_9
-      frameIndex: 9
-      cellRect:
-        x: 9
-        y: 6
-        width: 35
-        height: 20
-      spriteId: c3cb48560d8866845b028c0ffd9bab85
+        x: 17
+        y: 13
+        width: 41
+        height: 33
+      spriteId: 3ec8d3a04478f3040b448618904ac43b
     linkedCells: []
     parentIndex: -1
   platformSettings: []

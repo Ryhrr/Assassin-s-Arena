@@ -1,46 +1,93 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using static UnityEngine.GraphicsBuffer;
+using UnityEngine.U2D;
 
-public class Healt_enemy : MonoBehaviour
+public class HealthEnemy : MonoBehaviour
 {
-
     public CircleCollider2D CircleCollider2D;
-    // Start is called before the first frame update
+    public EnemyControll Behaviour;
+    public Animator animator;
+    private Transform target;
+    private SpriteRenderer sprite;
+    public Health HealthComponent;
+    bool bletouch = false;
+    float timer = 0;
+    float attackTime = 1;
+
+
     void Start()
     {
         CircleCollider2D = GetComponent<CircleCollider2D>();
+        Behaviour = GetComponent<EnemyControll>();
+        animator = GetComponent<Animator>();
+        target = FindObjectOfType<NewBehaviourScript>().transform;
+        HealthComponent = FindObjectOfType<Health>();
+        sprite = GetComponent<SpriteRenderer>();
     }
 
+    void Update()
+    {
+        if (bletouch)
+        {
+            timer += Time.deltaTime;
+            if (timer >= attackTime)
+            {
+                timer = 0;
+                animator.SetBool("Hitting", true);
+
+                if (target.position.x - transform.position.x <= -0.001)
+                {
+                    sprite.flipX = true;
+                }
+                else
+                {
+                    sprite.flipX = false;
+                }
+
+
+                HealthComponent.Damage(10);
+
+            }
+
+
+        }
+    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-       
-        if (collision.tag == "Player")
+        if (collision.CompareTag("Player"))
         {
-            var healthComponent = collision.GetComponent<Health>();
-            if (healthComponent != null)
-            {
-                healthComponent.Damage(1);
-            }
+            Behaviour.speed = 0;
+            bletouch = true;
         }
+
+        collision.gameObject.GetComponent<Health>();
+
     }
 
-
-    private void OnTriggerStay2D(Collider2D collision)
+    private void OnTriggerStay(Collider2D collision)
     {
-        if (collision.tag == "Player")
+        if (collision.CompareTag("Player"))
         {
-            var healthComponent = collision.GetComponent<Health>();
-            if (healthComponent != null)
-            {
-                healthComponent.Damage(1);
-            }
+            Behaviour.speed = 0;
+            bletouch = true;
         }
+
+
+        
+        
+
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        
+
+        if(collision.CompareTag("Player"))
+        {
+            Behaviour.speed = 5;
+            bletouch = false;
+            animator.SetBool("Hitting", false);
+        }
+      
     }
 }
