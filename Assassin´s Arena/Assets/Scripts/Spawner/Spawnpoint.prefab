@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: 1512725199237543787}
   - component: {fileID: 2947847284575460000}
   - component: {fileID: 6855096772109513805}
+  - component: {fileID: 5130441737551419694}
+  - component: {fileID: 7757856448594793240}
   m_Layer: 0
   m_Name: Spawnpoint
   m_TagString: Untagged
@@ -29,8 +31,8 @@ Transform:
   m_GameObject: {fileID: 4935078255698603463}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.0447524, y: 0.85422367, z: 0}
-  m_LocalScale: {x: 6, y: 6, z: 6}
+  m_LocalPosition: {x: 3.1179, y: 0.5582, z: 0}
+  m_LocalScale: {x: 5.7261324, y: 5.655893, z: 6}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -113,7 +115,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 7
 --- !u!95 &2947847284575460000
 Animator:
   serializedVersion: 5
@@ -147,3 +149,77 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 435983313fcccf14ea01357b83860c4f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!60 &5130441737551419694
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4935078255698603463}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.52346814, y: 0.5689753}
+      - {x: 0.010198073, y: 0.21901108}
+      - {x: -0.73913556, y: 0.8536105}
+      - {x: -0.8470892, y: 0.7392934}
+      - {x: -0.244811, y: 0.011325352}
+      - {x: -0.8449701, y: -0.94937986}
+      - {x: -0.67915744, y: -1.0342438}
+      - {x: 0.011907859, y: -0.19450462}
+      - {x: 1.0717901, y: -0.90326273}
+      - {x: 1.1956044, y: -0.7888466}
+      - {x: 0.21800691, y: 0.006213853}
+      - {x: 0.69430566, y: 0.3893203}
+      - {x: 0.9747898, y: 0.8595488}
+      - {x: 0.82740784, y: 0.9935381}
+  m_UseDelaunayMesh: 0
+--- !u!114 &7757856448594793240
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4935078255698603463}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97c78af42267b604cbe0dcff259629dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Poly_Colly: {fileID: 5130441737551419694}
+  Enem_Controll: {fileID: 0}
+  Enem_HP: {fileID: 0}

@@ -16,10 +16,9 @@ public class IceSpikes : Abilities
     {
 
         Transform parentTransform = parent.transform;
-
         
-        Instantiate(Spawn_cube, parentTransform.position, Quaternion.identity);
 
+        Instantiate(Spawn_cube, parentTransform.position, Quaternion.identity);
 
 
     }

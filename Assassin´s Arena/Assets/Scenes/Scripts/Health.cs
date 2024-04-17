@@ -13,7 +13,7 @@ public class Health : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        currentHealth = 100;
+        currentHealth = maxHealth;
         anim = GetComponent<Animator>();
         Behaviour = GetComponent<NewBehaviourScript>();
     }   

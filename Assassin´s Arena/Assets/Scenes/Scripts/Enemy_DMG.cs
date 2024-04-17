@@ -32,20 +32,30 @@ public class HealthEnemy : MonoBehaviour
             timer += Time.deltaTime;
             if (timer >= attackTime)
             {
-                timer = 0;
-                animator.SetBool("Hitting", true);
-
-                if (target.position.x - transform.position.x <= -0.001)
+                if (HealthComponent.currentHealth >= 1)
                 {
-                    sprite.flipX = true;
+
+                    timer = 0;
+                    animator.SetBool("Hitting", true);
+
+                    if (target.position.x - transform.position.x <= -0.001)
+                    {
+                        sprite.flipX = true;
+                    }
+                    else
+                    {
+                        sprite.flipX = false;
+                    }
+
+                
+                
+                    HealthComponent.Damage(10);
                 }
                 else
                 {
-                    sprite.flipX = false;
+                    animator.SetBool("Hitting", false);
                 }
-
-
-                HealthComponent.Damage(10);
+               
 
             }
 
@@ -72,10 +82,6 @@ public class HealthEnemy : MonoBehaviour
             Behaviour.speed = 0;
             bletouch = true;
         }
-
-
-        
-        
 
     }
 
