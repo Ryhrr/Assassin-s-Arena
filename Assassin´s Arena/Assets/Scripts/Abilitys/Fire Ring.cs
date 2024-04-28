@@ -9,19 +9,17 @@ using UnityEngine.UIElements;
 [CreateAssetMenu]
 public class FireRing : Abilities
 {
-    
+    public GameObject Spawn_Fire_cube;
     public float Range;
 
     public override void Activate(GameObject parent)
     {
-        Animator animator = parent.GetComponent<Animator>();
+
+        Transform parentTransform = parent.transform;
 
 
-            animator.SetBool("Key", true);
-            animator.SetFloat("Ability", 1);
+        Instantiate(Spawn_Fire_cube, parentTransform.position, Quaternion.identity);
 
-        
-       
     }
 
 }

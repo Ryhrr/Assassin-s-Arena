@@ -18,7 +18,7 @@ GameObject:
   m_Layer: 0
   m_Name: Spawnpoint
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 8418204508859773708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -149,6 +149,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 435983313fcccf14ea01357b83860c4f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Destroy_time: 10
 --- !u!60 &5130441737551419694
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -221,5 +222,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Poly_Colly: {fileID: 5130441737551419694}
-  Enem_Controll: {fileID: 0}
-  Enem_HP: {fileID: 0}
+  Enem_Controlls: []
+  Enem_HPs: []
+  fslow: 2
+  idmg: 5

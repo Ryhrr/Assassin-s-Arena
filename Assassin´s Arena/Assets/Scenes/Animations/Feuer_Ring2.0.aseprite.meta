@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: aa0af877f7161e34abdc70ef3300f1fd
+guid: cd5d7d48686300e468e2adad900de44b
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -121,18 +121,18 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: Mage_feuer_animation_Frame_0
+  - name: Feuer_Ring2.0_Frame_0
     originalName: 
-    pivot: {x: 0.47407103, y: 0.61797893}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 126
-      y: 186
-      width: 39
-      height: 45
-    spriteID: 89a15d25cc71a554b86e2b3d3ac55b87
+      x: 438
+      y: 202
+      width: 52
+      height: 43
+    spriteID: 447ee8335275775468ced03fe558acb9
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -140,19 +140,39 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 126, y: 186}
-  - name: Mage_feuer_animation_Frame_1
+    uvTransform: {x: 438, y: 202}
+  - name: Feuer_Ring2.0_Frame_1
     originalName: 
-    pivot: {x: 0.50866574, y: 0.59253365}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 126
-      y: 118
-      width: 62
+      x: 438
+      y: 145
+      width: 57
+      height: 49
+    spriteID: d6531aefde2805d4697b8ed3788494f2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 438, y: 145}
+  - name: Feuer_Ring2.0_Frame_2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 432
+      y: 286
+      width: 69
       height: 60
-    spriteID: db710025ddd61ed468fc72a1ccb5b833
+    spriteID: a1a06904e8660cd42a42c2e413b8de42
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -160,19 +180,59 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 126, y: 118}
-  - name: Mage_feuer_animation_Frame_2
+    uvTransform: {x: 432, y: 286}
+  - name: Feuer_Ring2.0_Frame_3
     originalName: 
-    pivot: {x: 0.46418062, y: 0.57497084}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 350
+      y: 286
+      width: 74
+      height: 73
+    spriteID: e108e29f8b8cb6d4fac8d7b2b9c36014
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 350, y: 286}
+  - name: Feuer_Ring2.0_Frame_4
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 261
+      y: 286
+      width: 81
+      height: 78
+    spriteID: b804051df8a69c644804c47a9b64d8d3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 261, y: 286}
+  - name: Feuer_Ring2.0_Frame_5
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
-      y: 124
-      width: 85
+      y: 417
+      width: 103
       height: 86
-    spriteID: ec6cdc3cc3336f548a834a44d289f885
+    spriteID: 61129ad80ac5edd4ba6cabd2e8d502c8
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -180,19 +240,79 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 124}
-  - name: Mage_feuer_animation_Frame_3
+    uvTransform: {x: 4, y: 417}
+  - name: Feuer_Ring2.0_Frame_6
     originalName: 
-    pivot: {x: 0.45129824, y: 0.5223872}
-    alignment: 9
-    border: {x: 1, y: 0, z: 3, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 140
+      y: 286
+      width: 113
+      height: 106
+    spriteID: 83f8bd95cc51ee344804816f8b1eb5a8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 140, y: 286}
+  - name: Feuer_Ring2.0_Frame_7
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 304
+      y: 145
+      width: 126
+      height: 126
+    spriteID: 65cf78351cdf6e04386885c71740f514
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 304, y: 145}
+  - name: Feuer_Ring2.0_Frame_8
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 286
+      width: 128
+      height: 123
+    spriteID: 039498b6d0f172046b0f8bdee7ac72c6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 286}
+  - name: Feuer_Ring2.0_Frame_9
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 114
-      height: 112
-    spriteID: 5ec346fc4709ac646b70f90c65615a76
+      width: 142
+      height: 133
+    spriteID: 8b147d20e97f7ff48923ceb95bb7cac5
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -201,18 +321,18 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 4, y: 4}
-  - name: Mage_feuer_animation_Frame_4
+  - name: Feuer_Ring2.0_Frame_10
     originalName: 
-    pivot: {x: 0.5087934, y: 0.5071551}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 126
+      x: 154
       y: 4
-      width: 115
-      height: 106
-    spriteID: 02f3fd143da6b6543bb710a2ceebfe13
+      width: 142
+      height: 133
+    spriteID: ea15ae98d03beac45af71877470f7aa4
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -220,19 +340,19 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 126, y: 4}
-  - name: Mage_feuer_animation_Frame_5
+    uvTransform: {x: 154, y: 4}
+  - name: Feuer_Ring2.0_Frame_11
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 97
-      y: 167
-      width: 19
-      height: 34
-    spriteID: 0bac3f18fb29bfd4f8faa967eaf0b95f
+      x: 304
+      y: 4
+      width: 142
+      height: 133
+    spriteID: 621dcf9034a4e9542a82b84bfb0939d9
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -240,28 +360,8 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 97, y: 167}
-  - name: Mage_feuer_animation_Frame_6
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 97
-      y: 209
-      width: 19
-      height: 34
-    spriteID: 2ca4745ff1b778c4db62bd133cd5f74e
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 97, y: 209}
-  - name: Mage_feuer_animation_Frame_7
+    uvTransform: {x: 304, y: 4}
+  - name: Feuer_Ring2.0_Frame_12
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -269,10 +369,10 @@ ScriptedImporter:
     rect:
       serializedVersion: 2
       x: 4
-      y: 218
-      width: 19
-      height: 34
-    spriteID: 8b58d6b9a0f38c24f96de03a9b201531
+      y: 145
+      width: 142
+      height: 133
+    spriteID: 515b74da01e271e4a9b3c087635c980a
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -280,19 +380,19 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 218}
-  - name: Mage_feuer_animation_Frame_8
+    uvTransform: {x: 4, y: 145}
+  - name: Feuer_Ring2.0_Frame_13
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 97
-      y: 124
-      width: 19
-      height: 35
-    spriteID: c20ed06cd492f6348b7317c8e2a1729a
+      x: 154
+      y: 145
+      width: 142
+      height: 133
+    spriteID: a8184ffa0ad4d314da77dd39265d5261
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -300,120 +400,132 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 97, y: 124}
-  - name: Mage_feuer_animation_Frame_9
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 31
-      y: 218
-      width: 19
-      height: 34
-    spriteID: 535a900a5e2a313458ca5f2a1b68d468
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 31, y: 218}
+    uvTransform: {x: 154, y: 145}
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    guid: 1470334809
-    name: Mage_feuer_animation
+    guid: 495598860
+    name: Feuer_Ring2.0
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: Mage_feuer_animation_Frame_0
+    - name: Feuer_Ring2.0_Frame_0
       frameIndex: 0
       cellRect:
-        x: 47
-        y: 32
-        width: 39
-        height: 45
-      spriteId: 89a15d25cc71a554b86e2b3d3ac55b87
-    - name: Mage_feuer_animation_Frame_1
+        x: 73
+        y: 74
+        width: 52
+        height: 43
+      spriteId: 447ee8335275775468ced03fe558acb9
+    - name: Feuer_Ring2.0_Frame_1
       frameIndex: 1
       cellRect:
-        x: 34
-        y: 24
-        width: 62
-        height: 60
-      spriteId: db710025ddd61ed468fc72a1ccb5b833
-    - name: Mage_feuer_animation_Frame_2
+        x: 70
+        y: 72
+        width: 57
+        height: 49
+      spriteId: d6531aefde2805d4697b8ed3788494f2
+    - name: Feuer_Ring2.0_Frame_2
       frameIndex: 2
       cellRect:
-        x: 26
-        y: 10
-        width: 85
-        height: 86
-      spriteId: ec6cdc3cc3336f548a834a44d289f885
-    - name: Mage_feuer_animation_Frame_3
+        x: 64
+        y: 69
+        width: 69
+        height: 60
+      spriteId: a1a06904e8660cd42a42c2e413b8de42
+    - name: Feuer_Ring2.0_Frame_3
       frameIndex: 3
       cellRect:
-        x: 14
-        y: 1
-        width: 114
-        height: 112
-      spriteId: 5ec346fc4709ac646b70f90c65615a76
-    - name: Mage_feuer_animation_Frame_4
+        x: 59
+        y: 59
+        width: 74
+        height: 73
+      spriteId: e108e29f8b8cb6d4fac8d7b2b9c36014
+    - name: Feuer_Ring2.0_Frame_4
       frameIndex: 4
       cellRect:
-        x: 7
-        y: 6
-        width: 115
-        height: 106
-      spriteId: 02f3fd143da6b6543bb710a2ceebfe13
-    - name: Mage_feuer_animation_Frame_5
+        x: 56
+        y: 57
+        width: 81
+        height: 78
+      spriteId: b804051df8a69c644804c47a9b64d8d3
+    - name: Feuer_Ring2.0_Frame_5
       frameIndex: 5
       cellRect:
-        x: 56
-        y: 43
-        width: 19
-        height: 34
-      spriteId: 0bac3f18fb29bfd4f8faa967eaf0b95f
-    - name: Mage_feuer_animation_Frame_6
+        x: 41
+        y: 54
+        width: 103
+        height: 86
+      spriteId: 61129ad80ac5edd4ba6cabd2e8d502c8
+    - name: Feuer_Ring2.0_Frame_6
       frameIndex: 6
       cellRect:
-        x: 56
+        x: 41
         y: 43
-        width: 19
-        height: 34
-      spriteId: 2ca4745ff1b778c4db62bd133cd5f74e
-    - name: Mage_feuer_animation_Frame_7
+        width: 113
+        height: 106
+      spriteId: 83f8bd95cc51ee344804816f8b1eb5a8
+    - name: Feuer_Ring2.0_Frame_7
       frameIndex: 7
       cellRect:
-        x: 56
-        y: 43
-        width: 19
-        height: 34
-      spriteId: 8b58d6b9a0f38c24f96de03a9b201531
-    - name: Mage_feuer_animation_Frame_8
+        x: 33
+        y: 34
+        width: 126
+        height: 126
+      spriteId: 65cf78351cdf6e04386885c71740f514
+    - name: Feuer_Ring2.0_Frame_8
       frameIndex: 8
       cellRect:
-        x: 56
-        y: 42
-        width: 19
-        height: 35
-      spriteId: c20ed06cd492f6348b7317c8e2a1729a
-    - name: Mage_feuer_animation_Frame_9
+        x: 32
+        y: 37
+        width: 128
+        height: 123
+      spriteId: 039498b6d0f172046b0f8bdee7ac72c6
+    - name: Feuer_Ring2.0_Frame_9
       frameIndex: 9
       cellRect:
-        x: 56
-        y: 43
-        width: 19
-        height: 34
-      spriteId: 535a900a5e2a313458ca5f2a1b68d468
+        x: 26
+        y: 30
+        width: 142
+        height: 133
+      spriteId: 8b147d20e97f7ff48923ceb95bb7cac5
+    - name: Feuer_Ring2.0_Frame_10
+      frameIndex: 10
+      cellRect:
+        x: 26
+        y: 30
+        width: 142
+        height: 133
+      spriteId: ea15ae98d03beac45af71877470f7aa4
+    - name: Feuer_Ring2.0_Frame_11
+      frameIndex: 11
+      cellRect:
+        x: 26
+        y: 30
+        width: 142
+        height: 133
+      spriteId: 621dcf9034a4e9542a82b84bfb0939d9
+    - name: Feuer_Ring2.0_Frame_12
+      frameIndex: 12
+      cellRect:
+        x: 26
+        y: 30
+        width: 142
+        height: 133
+      spriteId: 515b74da01e271e4a9b3c087635c980a
+    - name: Feuer_Ring2.0_Frame_13
+      frameIndex: 13
+      cellRect:
+        x: 26
+        y: 30
+        width: 142
+        height: 133
+      spriteId: a8184ffa0ad4d314da77dd39265d5261
     linkedCells: []
     parentIndex: -1
   platformSettings: []
   generatePhysicsShape: 0
   secondarySpriteTextures: []
   spritePackingTag: 
-  canvasSize: {x: 128, y: 128}
+  canvasSize: {x: 192, y: 192}
