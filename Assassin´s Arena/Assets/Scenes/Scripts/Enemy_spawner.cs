@@ -1,58 +1,50 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UIElements;
 using static UnityEngine.GraphicsBuffer;
 
-public class Enemy_spawner : MonoBehaviour
+public class EnemySpawner : MonoBehaviour
 {
     [SerializeField] private float spawnRate = 1f;
     [SerializeField] private GameObject[] enemyPrefabs;
-    [SerializeField] private bool Spawn = true;
-    [SerializeField] float spawn_range = 100;
-    public Transform transform;
-    private Transform transform_Mage;
-    int nr = 0;
-    int Enemy_nr = 5;
+    [SerializeField] private bool spawn = true;
+    [SerializeField] private float spawnRange = 100f;
+    private Transform playerTransform;
+    private int enemyCount = 0;
+    private int maxEnemies = 5;
 
     void Start()
     {
-       StartCoroutine (Spawner());
-        transform.GetComponent<Transform>();
-        transform_Mage = FindObjectOfType<NewBehaviourScript>().transform;
+        playerTransform = FindObjectOfType<NewBehaviourScript>().transform;
+        StartCoroutine(Spawner());
     }
 
-
-    // Update is called once per frame
     private IEnumerator Spawner()
     {
-        while(Spawn)
+        while (spawn)
         {
+            yield return new WaitForSeconds(spawnRate);
 
-
-
-            WaitForSeconds wait = new WaitForSeconds(spawnRate);
-
-
-
-
-            do
+            if (enemyCount < maxEnemies)
             {
+                float randomY = Random.Range(playerTransform.position.y - spawnRange, playerTransform.position.y + spawnRange);
+                float randomX = Mathf.Sqrt(Mathf.Pow(spawnRange, 2) - Mathf.Pow(randomY, 2));
+                float randomAngle = Random.Range(0f, 360f);
+                Vector3 spawnPosition = new Vector3(playerTransform.position.x + randomX * Mathf.Cos(randomAngle * Mathf.Deg2Rad), randomY, playerTransform.position.z + randomX * Mathf.Sin(randomAngle * Mathf.Deg2Rad));
 
-                yield return wait;
                 int rand = Random.Range(0, enemyPrefabs.Length);
                 GameObject enemyToSpawn = enemyPrefabs[rand];
 
-                Instantiate(enemyToSpawn, transform.position, Quaternion.identity);
+                Instantiate(enemyToSpawn, spawnPosition, Quaternion.identity);
 
-                nr += 1;
-
-
-            }while(true);
-
-
+                enemyCount += 1;
+            }
+            else
+            {
+                spawn = false;
+            }
         }
-
     }
-
 }
