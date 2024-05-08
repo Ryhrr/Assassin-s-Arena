@@ -13,7 +13,7 @@ public class EnemySpawner : MonoBehaviour
     [SerializeField] private float spawnRange = 100f;
     private Transform playerTransform;
     private int enemyCount = 0;
-    private int maxEnemies = 5;
+    private int maxEnemies = 600;
 
     void Start()
     {
@@ -43,6 +43,7 @@ public class EnemySpawner : MonoBehaviour
             }
             else
             {
+
                 spawn = false;
             }
         }

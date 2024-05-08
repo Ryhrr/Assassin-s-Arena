@@ -226,3 +226,4 @@ MonoBehaviour:
   Enem_HPs: []
   fslow: 2
   idmg: 5
+  f_dmg_Ticks_Max: 100

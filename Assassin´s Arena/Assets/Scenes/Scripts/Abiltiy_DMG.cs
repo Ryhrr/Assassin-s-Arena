@@ -9,11 +9,13 @@ public class Abiltiy_DMG : MonoBehaviour
     public List<EnemyControll> Enem_Controlls = new List<EnemyControll>();
     public List<Enemy_Health> Enem_HPs = new List<Enemy_Health>();
 
+    float Destroy_time = 10;
     bool bletouch = false;
     [SerializeField] float fslow = 2;
     [SerializeField] int idmg = 5;
     float timer = 0;
-    double attackTime = 0.5;
+    double attackTime = 1;
+   
 
     void Start()
     {
@@ -34,6 +36,7 @@ public class Abiltiy_DMG : MonoBehaviour
                 }
             }
         }
+
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -48,11 +51,11 @@ public class Abiltiy_DMG : MonoBehaviour
             }
 
             Enemy_Health enemyHP = collision.gameObject.GetComponent<Enemy_Health>();
-            if (enemyHP != null)
+            if (enemyHP != null && !Enem_HPs.Contains(enemyHP))
             {
                 Enem_HPs.Add(enemyHP);
-            }
 
+            }
             bletouch = true;
         }
     }
@@ -72,6 +75,7 @@ public class Abiltiy_DMG : MonoBehaviour
             if (enemyHP != null && !Enem_HPs.Contains(enemyHP))
             {
                 Enem_HPs.Add(enemyHP);
+                
             }
 
             bletouch = true;
