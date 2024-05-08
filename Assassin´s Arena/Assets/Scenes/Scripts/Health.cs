@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Health : MonoBehaviour
 {
@@ -34,8 +35,8 @@ public class Health : MonoBehaviour
             //dead :(
             anim.SetBool("Dead", true);
             Behaviour.MoveSpeed = 0;
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
 
-            
         }
         healthBar.SetHealth(currentHealth);
         healthBar.OnHealthChanged(currentHealth);
