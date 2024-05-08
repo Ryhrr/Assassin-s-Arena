@@ -38,5 +38,6 @@ public class Health : MonoBehaviour
             
         }
         healthBar.SetHealth(currentHealth);
+        healthBar.OnHealthChanged(currentHealth);
     }
 }
