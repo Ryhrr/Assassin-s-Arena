@@ -7,6 +7,8 @@ public class Health : MonoBehaviour
 
     public int maxHealth = 100;
     public int currentHealth;
+    public HealthBar healthBar;
+
 
     public Animator anim;
     public NewBehaviourScript Behaviour;
@@ -16,6 +18,8 @@ public class Health : MonoBehaviour
         currentHealth = maxHealth;
         anim = GetComponent<Animator>();
         Behaviour = GetComponent<NewBehaviourScript>();
+
+        healthBar.SetMaxHealth(maxHealth);
     }   
 
 
@@ -23,6 +27,7 @@ public class Health : MonoBehaviour
     {
 
         currentHealth -= amount;
+
 
         if (currentHealth <= 0)
         {
@@ -32,5 +37,6 @@ public class Health : MonoBehaviour
 
             
         }
+        healthBar.SetHealth(currentHealth);
     }
 }
