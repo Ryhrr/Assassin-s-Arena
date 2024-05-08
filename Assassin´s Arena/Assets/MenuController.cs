@@ -7,6 +7,7 @@ using TMPro;
 public class MenuController : MonoBehaviour
 {
     public Text valueText;
+    [SerializeField] Slider volumeSlider;
     public void PlayGame()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
@@ -22,4 +23,16 @@ public class MenuController : MonoBehaviour
     {
         valueText.text = value.ToString();
     }
+
+    public void OnVolumeChange()
+    {
+        AudioListener.volume = volumeSlider.value; 
+    
+    }
+
+    public void ResetToDefault()
+    {
+        volumeSlider.value = 100;
+    }
+
 }

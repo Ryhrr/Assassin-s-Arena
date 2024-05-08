@@ -123,16 +123,16 @@ ScriptedImporter:
   animatedSpriteImportData:
   - name: Fireability_Frame_0
     originalName: 
-    pivot: {x: 0.25, y: 0}
+    pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 32
-      height: 32
-    spriteID: 7fe713e3037e6004a93fed72398f2800
+      width: 16
+      height: 16
+    spriteID: 0c8ecf8b04d09874d93afe66bd38dcfc
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -143,16 +143,16 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 4}
   - name: Fireability_Frame_1
     originalName: 
-    pivot: {x: 0.25, y: 0}
+    pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
-      y: 44
-      width: 32
-      height: 32
-    spriteID: b6b9ad29c7a0d7947b4b6080c2556856
+      y: 28
+      width: 16
+      height: 16
+    spriteID: 7c6e66d42e936244bb3ea72378162292
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -160,19 +160,19 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 44}
+    uvTransform: {x: 4, y: 28}
   - name: Fireability_Frame_2
     originalName: 
-    pivot: {x: 0.25, y: 0}
+    pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 4
-      y: 84
-      width: 32
-      height: 32
-    spriteID: f2c05544eae0c33479f053bcdff82066
+      x: 28
+      y: 4
+      width: 16
+      height: 16
+    spriteID: 1d3324c50d70fa647bfa2de55121c8fe
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -180,7 +180,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 84}
+    uvTransform: {x: 28, y: 4}
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
@@ -195,25 +195,25 @@ ScriptedImporter:
       cellRect:
         x: 0
         y: 0
-        width: 32
-        height: 32
-      spriteId: 7fe713e3037e6004a93fed72398f2800
+        width: 16
+        height: 16
+      spriteId: 0c8ecf8b04d09874d93afe66bd38dcfc
     - name: Fireability_Frame_1
       frameIndex: 1
       cellRect:
         x: 0
         y: 0
-        width: 32
-        height: 32
-      spriteId: b6b9ad29c7a0d7947b4b6080c2556856
+        width: 16
+        height: 16
+      spriteId: 7c6e66d42e936244bb3ea72378162292
     - name: Fireability_Frame_2
       frameIndex: 2
       cellRect:
         x: 0
         y: 0
-        width: 32
-        height: 32
-      spriteId: f2c05544eae0c33479f053bcdff82066
+        width: 16
+        height: 16
+      spriteId: 1d3324c50d70fa647bfa2de55121c8fe
     linkedCells: []
     parentIndex: -1
   platformSettings: []
