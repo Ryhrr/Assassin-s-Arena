@@ -1,12 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Enemy_Health : MonoBehaviour
 {
     public Animator anim;
     public EnemyControll controll;
-
+    public static int killchanger = 0;
+  
     private int maxHealth = 50;
     [SerializeField]
     private int currentHealth;
@@ -33,6 +35,7 @@ public class Enemy_Health : MonoBehaviour
 
             Destroy(gameObject,1);
 
+            killchanger = killchanger + 1;
 
         }
     }
