@@ -39,51 +39,53 @@ public class Ability_Holder : MonoBehaviour
     private void Update()
     {
 
+        if (!Pausemenu.ispaused)
+        {
+            switch (state)
+            {
 
-        switch (state) {
+                case AbilityState.ready:
 
-            case AbilityState.ready:
+                    if (Input.GetKey(key))
+                    {
+                        abilitiy.Activate(gameObject);
+                        state = AbilityState.active;
+                        activeTime = abilitiy.activeTime;
 
-                if (Input.GetKey(key))
-                {
-                    abilitiy.Activate(gameObject);
-                    state = AbilityState.active;
-                    activeTime = abilitiy.activeTime;
+                    }
 
-                }
-
-                break;
-            case AbilityState.active:
-
-
-                if (activeTime > 0)
-                {
-                    activeTime -= Time.deltaTime; 
-                }
-                else
-                {
-                    state = AbilityState.cooldown;
-                    cooldownTime = abilitiy.cooldownTime;
-                }
+                    break;
+                case AbilityState.active:
 
 
-                break;
-            case AbilityState.cooldown:
+                    if (activeTime > 0)
+                    {
+                        activeTime -= Time.deltaTime;
+                    }
+                    else
+                    {
+                        state = AbilityState.cooldown;
+                        cooldownTime = abilitiy.cooldownTime;
+                    }
 
-                animator.SetBool("Key", false);
-                
 
-                if (activeTime > 0)
-                {
-                    activeTime -= Time.deltaTime;
-                }
-                else
-                {
-                    state = AbilityState.ready;
-                }
-                break;
+                    break;
+                case AbilityState.cooldown:
+
+                    animator.SetBool("Key", false);
+
+
+                    if (activeTime > 0)
+                    {
+                        activeTime -= Time.deltaTime;
+                    }
+                    else
+                    {
+                        state = AbilityState.ready;
+                    }
+                    break;
+            }
         }
-
 
 
         
