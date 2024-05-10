@@ -1,6 +1,8 @@
 using UnityEngine;
 using static UnityEngine.GraphicsBuffer;
 using UnityEngine.U2D;
+using System;
+using Unity.VisualScripting;
 
 public class HealthEnemy : MonoBehaviour
 {
@@ -65,37 +67,33 @@ public class HealthEnemy : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    
+private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Player"))
-        {
-            Behaviour.speed = 0;
-            bletouch = true;
-        }
-
-        collision.gameObject.GetComponent<Health>();
-
+        HandlePlayerCollision(collision);
     }
 
-    private void OnTriggerStay(Collider2D collision)
+    private void OnTriggerStay2D(Collider2D collision)
     {
-        if (collision.CompareTag("Player"))
-        {
-            Behaviour.speed = 0;
-            bletouch = true;
-        }
-
+        HandlePlayerCollision(collision);
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-
-        if(collision.CompareTag("Player"))
+        if (collision.CompareTag("Player"))
         {
             Behaviour.speed = 5;
             bletouch = false;
             animator.SetBool("Hitting", false);
         }
-      
+    }
+
+    private void HandlePlayerCollision(Collider2D collision)
+    {
+        if (collision.CompareTag("Player"))
+        {
+            Behaviour.speed = 0;
+            bletouch = true;
+        }
     }
 }

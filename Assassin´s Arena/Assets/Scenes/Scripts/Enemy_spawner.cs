@@ -7,13 +7,18 @@ using static UnityEngine.GraphicsBuffer;
 
 public class EnemySpawner : MonoBehaviour
 {
-    [SerializeField] private float spawnRate = 1f;
+    [SerializeField] private float spawnRate = 2.1f;
+    [SerializeField] private float Time_between_Waves = 3f;
     [SerializeField] private GameObject[] enemyPrefabs;
     [SerializeField] private bool spawn = true;
     [SerializeField] private float spawnRange = 100f;
+
+    public Deathcounter Deathcounter;
+
     private Transform playerTransform;
     private int enemyCount = 0;
-    private int maxEnemies = 600;
+    private int maxEnemies = 5;
+    private int Welle = 0;
 
     void Start()
     {
@@ -25,10 +30,15 @@ public class EnemySpawner : MonoBehaviour
     {
         while (spawn)
         {
-            yield return new WaitForSeconds(spawnRate);
+           
+            Enemy_Health.Kills_this_Round = 0;
 
-            if (enemyCount < maxEnemies)
+            do
             {
+               
+
+                yield return new WaitForSeconds(spawnRate);
+
                 float randomY = Random.Range(playerTransform.position.y - spawnRange, playerTransform.position.y + spawnRange);
                 float randomX = Mathf.Sqrt(Mathf.Pow(spawnRange, 2) - Mathf.Pow(randomY, 2));
                 float randomAngle = Random.Range(0f, 360f);
@@ -40,12 +50,41 @@ public class EnemySpawner : MonoBehaviour
                 Instantiate(enemyToSpawn, spawnPosition, Quaternion.identity);
 
                 enemyCount += 1;
+
+
+            }while(enemyCount < maxEnemies);
+
+            if (Enemy_Health.Kills_this_Round == maxEnemies)
+            {
+
+
+                // Hier kommt das Icon von der Welle und welche welle
+
+
             }
             else
             {
+                do
+                {
 
+                } while (Enemy_Health.Kills_this_Round == maxEnemies);
+                yield return new WaitForSeconds(Time_between_Waves);
+
+                // Hier kommt ebenfalls das Icon von der Welle und welche welle
+            }
+
+            Welle = Welle+1;
+
+            spawnRate = 2.1f - (Welle/10);
+
+            maxEnemies = 5* Welle;
+
+            if(Welle == 21)
+            {
                 spawn = false;
             }
+
+             
         }
     }
 }

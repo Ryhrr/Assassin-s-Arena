@@ -9,7 +9,8 @@ public class Enemy_Health : MonoBehaviour
     public Animator anim;
     public EnemyControll controll;
     public static int killchanger = 0;
-  
+     public static int Kills_this_Round = 0;
+
     private int maxHealth = 50;
     [SerializeField]
     private int currentHealth;
@@ -42,7 +43,12 @@ public class Enemy_Health : MonoBehaviour
             WAIT();
             
             killchanger = killchanger + 1;
+<<<<<<< HEAD
          
+=======
+            Kills_this_Round = Kills_this_Round +1;
+
+>>>>>>> 1b4ae6cdac167acf251fd882ffef0ee1809fe54c
         }
     }
 }

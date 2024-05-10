@@ -15,17 +15,21 @@ public class Abiltiy_DMG : MonoBehaviour
     [SerializeField] int idmg = 5;
     float timer = 0;
     double attackTime = 1;
+    public bool ble_Ice_Aktive = true;
    
 
     void Start()
     {
         Poly_Colly = GetComponent<PolygonCollider2D>();
+
     }
 
     void Update()
     {
         if (bletouch)
         {
+
+
             timer += Time.deltaTime;
             if (timer >= attackTime)
             {
