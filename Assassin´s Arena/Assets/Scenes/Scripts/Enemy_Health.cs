@@ -43,12 +43,10 @@ public class Enemy_Health : MonoBehaviour
             WAIT();
             
             killchanger = killchanger + 1;
-<<<<<<< HEAD
-         
-=======
+
             Kills_this_Round = Kills_this_Round +1;
 
->>>>>>> 1b4ae6cdac167acf251fd882ffef0ee1809fe54c
+
         }
     }
 }

@@ -4,11 +4,13 @@ using UnityEngine.UI;
 public class Deathcounter : MonoBehaviour
 {
     public Text Killcounter;
-    public GameObject Killcounterobj;
+    public Text Wellecounter;
 
     void Update()
     {
         Killcounter.text = Enemy_Health.killchanger.ToString();
+        Wellecounter.text = EnemySpawner.Welletxt.ToString();
+
 
         if (Enemy_Health.killchanger < 10)
         {
@@ -26,7 +28,7 @@ public class Deathcounter : MonoBehaviour
         {
 
             RectTransform rectTransform = Killcounter.GetComponent<RectTransform>();
-            rectTransform.localPosition = new Vector3(230, rectTransform.localPosition.y, rectTransform.localPosition.z);
+            rectTransform.localPosition = new Vector3(240, rectTransform.localPosition.y, rectTransform.localPosition.z);
         }
     }
 }

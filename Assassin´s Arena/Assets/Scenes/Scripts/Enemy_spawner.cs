@@ -12,13 +12,14 @@ public class EnemySpawner : MonoBehaviour
     [SerializeField] private GameObject[] enemyPrefabs;
     [SerializeField] private bool spawn = true;
     [SerializeField] private float spawnRange = 100f;
-
+   
     public Deathcounter Deathcounter;
 
     private Transform playerTransform;
     private int enemyCount = 0;
     private int maxEnemies = 5;
     private int Welle = 0;
+    public static int Welletxt;
 
     void Start()
     {
@@ -74,6 +75,8 @@ public class EnemySpawner : MonoBehaviour
             }
 
             Welle = Welle+1;
+
+            Welletxt = Welle;
 
             spawnRate = 2.1f - (Welle/10);
 

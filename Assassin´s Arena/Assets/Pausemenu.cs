@@ -13,7 +13,6 @@ public class Pausemenu : MonoBehaviour
     public GameObject deactivatepanel2;
     public GameObject deactivatepanel3;
     public GameObject deactivatepanel4;
-    public GameObject deactivatepanel5;
     public GameObject Killcounter;
    
 
