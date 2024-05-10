@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Collections;
 using UnityEngine.UI;
 
 public class Enemy_Health : MonoBehaviour
@@ -21,7 +22,10 @@ public class Enemy_Health : MonoBehaviour
         controll = GetComponent<EnemyControll>();
     }
 
-
+    public IEnumerator WAIT()
+    {
+        yield return new WaitForSeconds(40f);
+    }
     public void Damage_Enemy(int amount)
     {
 
@@ -35,8 +39,10 @@ public class Enemy_Health : MonoBehaviour
 
             Destroy(gameObject,1);
 
+            WAIT();
+            
             killchanger = killchanger + 1;
-
+         
         }
     }
 }
