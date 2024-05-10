@@ -18,8 +18,8 @@ public class Pausemenu : MonoBehaviour
 
     void Start()
     {
+        ispaused = false;
         Killcounter.SetActive(true);
-        pausemenu.SetActive(false);
         healthbar.SetActive(true);
 
     }
@@ -41,6 +41,7 @@ public class Pausemenu : MonoBehaviour
             }
             else
             {
+                ispaused = true;
                 PauseGame();
             }
 
