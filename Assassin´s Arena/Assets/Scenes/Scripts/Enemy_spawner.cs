@@ -58,6 +58,8 @@ public class EnemySpawner : MonoBehaviour
             {
 
 
+                // Hier kommt das Icon von der Welle und welche welle
+
 
             }
             else
@@ -67,6 +69,8 @@ public class EnemySpawner : MonoBehaviour
 
                 } while (Enemy_Health.Kills_this_Round == maxEnemies);
                 yield return new WaitForSeconds(Time_between_Waves);
+
+                // Hier kommt ebenfalls das Icon von der Welle und welche welle
             }
 
             Welle = Welle+1;

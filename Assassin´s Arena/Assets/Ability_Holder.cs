@@ -8,8 +8,10 @@ public class Ability_Holder : MonoBehaviour
     public Transform transform;
     public Abilities abilitiy;
     public Animator animator;
+
     float cooldownTime;
     float activeTime;
+
 
 
     private void Start()
