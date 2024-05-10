@@ -29,6 +29,8 @@ public class HealthEnemy : MonoBehaviour
     {
         if (bletouch)
         {
+            animator.SetBool("Hitting", true);
+
             timer += Time.deltaTime;
             if (timer >= attackTime)
             {
@@ -36,7 +38,7 @@ public class HealthEnemy : MonoBehaviour
                 {
 
                     timer = 0;
-                    animator.SetBool("Hitting", true);
+                   
 
                     if (target.position.x - transform.position.x <= -0.001)
                     {
