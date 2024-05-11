@@ -105,7 +105,7 @@ public class Shop_System : MonoBehaviour
         {
             blackMageBuyButton.SetActive(false);
             blackMageOwnedLabel.SetActive(true);
-            blackMagePricetag.SetActive(true);
+            blackMagePricetag.SetActive(false);
         }
     }
 
@@ -131,7 +131,7 @@ public class Shop_System : MonoBehaviour
             blueMagePricetag.SetActive(true);
         }
 
-        if (BlackMageBought) 
+        if (!BlackMageBought) 
         { 
             blackMageBuyButton.SetActive(true);
             blackMageOwnedLabel.SetActive(false);
