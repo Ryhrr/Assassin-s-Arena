@@ -9,8 +9,13 @@ public class Character_Choose : MonoBehaviour
     public GameObject Red_Mage;
     public GameObject Green_Mage;
     public GameObject Blue_Mage;
+    public GameObject Black_Mage;
 
-    
+    public GameObject DefaultMage;
+    public GameObject Red_Mage_Spawner;
+    public GameObject Green_Mage_Spawner;
+    public GameObject Blue_Mage_Spawner;
+    public GameObject Black_Mage_Spawner;
 
 
 
@@ -35,6 +40,11 @@ public class Character_Choose : MonoBehaviour
            
             Blue_Mage.SetActive(false);
         }
+        if (Shop_System.BlackMageBought)
+        {
+
+            Black_Mage.SetActive(false);
+        }
     }
 
     
@@ -58,10 +68,36 @@ public class Character_Choose : MonoBehaviour
 
             Blue_Mage.SetActive(true);
         }
+        if (!Shop_System.BlackMageBought)
+        {
+
+            Black_Mage.SetActive(true);
+        }
 
     }
 
-    
+    public void RedMageSpawner()
+    {
+        Red_Mage_Spawner.SetActive(true);
+        DefaultMage.SetActive(false);
+    }
+
+    public void GreenMageSpawn()
+    {
+        Green_Mage_Spawner.SetActive(true);
+        DefaultMage.SetActive(false);
+    }
+
+    public void BlueMageSpawn()
+    {
+        Blue_Mage_Spawner.SetActive(true);
+        DefaultMage.SetActive(false);
+    }
+    public void BlackMageSpawner()
+    {
+        Black_Mage_Spawner.SetActive(true);
+        DefaultMage.SetActive(false);
+    }
 
     void LoadProgress()
     {

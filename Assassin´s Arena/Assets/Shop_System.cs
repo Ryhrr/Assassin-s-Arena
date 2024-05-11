@@ -29,29 +29,42 @@ public class Shop_System : MonoBehaviour
         set { PlayerPrefs.SetInt("BlueMageBought", value ? 1 : 0); }
     }
 
+    public static bool BlackMageBought
+    {
+        get { return PlayerPrefs.GetInt("BlackMageBought", 0) == 1; }
+        set { PlayerPrefs.SetInt("BlackMageBought", value ? 1 : 0); }
+    }
+
     public Text txt_Currency;
     public GameObject redMagePanel;
     public GameObject greenMagePanel;
     public GameObject blueMagePanel;
+    public GameObject blackMagePanel;
 
     public GameObject redMageBuyButton;
     public GameObject greenMageBuyButton;
     public GameObject blueMageBuyButton;
+    public GameObject blackMageBuyButton;
 
     public GameObject redMageOwnedLabel;
     public GameObject greenMageOwnedLabel;
     public GameObject blueMageOwnedLabel;
+    public GameObject blackMageOwnedLabel;
 
     public int redMagePrice;
     public int greenMagePrice;
     public int blueMagePrice;
+    public int blackMagePrice;
+
     public GameObject redMagePricetag;
     public GameObject greenMagePricetag;
     public GameObject blueMagePricetag;
+    public GameObject blackMagePricetag;
 
     public Text redMageText;
     public Text greenMageText;
     public Text blueMageText;
+    public Text blackMageText;
 
     private GameObject activePanel;
     private GameObject activeBuyButton;
@@ -64,6 +77,7 @@ public class Shop_System : MonoBehaviour
         redMageText.text = redMagePrice.ToString();
         greenMageText.text = greenMagePrice.ToString();
         blueMageText.text = blueMagePrice.ToString();
+        blackMageText.text = blackMagePrice.ToString();
 
         // Lade den Fortschritt beim Spielstart
         LoadProgress();
@@ -86,6 +100,12 @@ public class Shop_System : MonoBehaviour
             blueMageBuyButton.SetActive(false);
             blueMageOwnedLabel.SetActive(true);
             blueMagePricetag.SetActive(false);
+        }
+        if (BlackMageBought) 
+        {
+            blackMageBuyButton.SetActive(false);
+            blackMageOwnedLabel.SetActive(true);
+            blackMagePricetag.SetActive(true);
         }
     }
 
@@ -110,6 +130,14 @@ public class Shop_System : MonoBehaviour
             blueMageOwnedLabel.SetActive(false);
             blueMagePricetag.SetActive(true);
         }
+
+        if (BlackMageBought) 
+        { 
+            blackMageBuyButton.SetActive(true);
+            blackMageOwnedLabel.SetActive(false);
+            blackMagePricetag.SetActive(true);
+        }
+
         // Aktualisiere die Anzeige der Münzen
         txt_Currency.text = Currency.ToString();
         CheckActivePanel();
@@ -138,6 +166,13 @@ public class Shop_System : MonoBehaviour
             activeBuyButton = blueMageBuyButton;
             activeOwnedLabel = blueMageOwnedLabel;
             activePriceTag = blueMagePricetag;
+        }
+        else if (blackMagePanel.activeSelf)
+        {
+            activePanel = blackMagePanel;
+            activeBuyButton = blackMageBuyButton;
+            activeOwnedLabel = blackMageOwnedLabel;
+            activePriceTag = blackMagePricetag;
         }
         else
         {
@@ -174,6 +209,10 @@ public class Shop_System : MonoBehaviour
             {
                 BlueMageBought = true;
             }
+            else if (activePanel == blackMagePanel)
+            {
+                BlackMageBought = true;
+            }
 
             // Speichere den Fortschritt
             SaveProgress();
@@ -195,6 +234,10 @@ public class Shop_System : MonoBehaviour
         else if (activePanel == blueMagePanel)
         {
             return blueMagePrice;
+        }
+        else if (activePanel == blueMagePanel)
+        {
+            return blackMagePrice;
         }
         return 0;
     }
