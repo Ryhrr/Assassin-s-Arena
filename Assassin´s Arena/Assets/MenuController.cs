@@ -44,6 +44,7 @@ public class MenuController : MonoBehaviour
     public void PlayGame()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        Enemy_Health.killchanger = 0;
     }
 
     public void ExitButton()

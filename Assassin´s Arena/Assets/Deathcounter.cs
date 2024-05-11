@@ -6,6 +6,10 @@ public class Deathcounter : MonoBehaviour
     public Text Killcounter;
     public Text Wellecounter;
 
+    private void Start()
+    {
+        
+    }
     void Update()
     {
         Killcounter.text = Enemy_Health.killchanger.ToString();
