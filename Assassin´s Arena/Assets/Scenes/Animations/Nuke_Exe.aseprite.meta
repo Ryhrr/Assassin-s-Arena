@@ -123,13 +123,13 @@ ScriptedImporter:
   animatedSpriteImportData:
   - name: Nuke_Exe_Frame_0
     originalName: 
-    pivot: {x: -0.645833, y: -9.778947}
+    pivot: {x: -6.710801, y: -7.9446187}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 651
-      y: 3601
+      x: 1548
+      y: 2476
       width: 96
       height: 95
     spriteID: 8248d68af89b5ea40991feb435eb1038
@@ -140,16 +140,16 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 651, y: 3601}
+    uvTransform: {x: 1548, y: 2476}
   - name: Nuke_Exe_Frame_1
     originalName: 
-    pivot: {x: -0.6082471, y: -9.343435}
+    pivot: {x: -5.194621, y: -7.0240936}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 543
-      y: 3601
+      x: 1548
+      y: 2369
       width: 97
       height: 99
     spriteID: 59952545f910b974b88acba388a834ac
@@ -160,16 +160,16 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 543, y: 3601}
+    uvTransform: {x: 1548, y: 2369}
   - name: Nuke_Exe_Frame_2
     originalName: 
-    pivot: {x: -0.5510204, y: -8.846153}
+    pivot: {x: -5.5508285, y: -6.579181}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 1298
-      y: 3710
+      x: 1548
+      y: 2257
       width: 98
       height: 104
     spriteID: a456662ad9d370d40bcdc2e7225c1a42
@@ -180,16 +180,16 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 1298, y: 3710}
+    uvTransform: {x: 1548, y: 2257}
   - name: Nuke_Exe_Frame_3
     originalName: 
-    pivot: {x: -0.5000003, y: -8.394496}
+    pivot: {x: -4.411984, y: -5.291087}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 1192
-      y: 3710
+      x: 1548
+      y: 2140
       width: 98
       height: 109
     spriteID: 88e5f7ffc7179c94baf67ae98940e3b5
@@ -200,16 +200,16 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 1192, y: 3710}
+    uvTransform: {x: 1548, y: 2140}
   - name: Nuke_Exe_Frame_4
     originalName: 
-    pivot: {x: -0.4300003, y: -7.9824567}
+    pivot: {x: -4.612265, y: -5.194998}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 1084
-      y: 3710
+      x: 1548
+      y: 2018
       width: 100
       height: 114
     spriteID: 8826651f769b55148850f02fb52118fe
@@ -220,16 +220,16 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 1084, y: 3710}
+    uvTransform: {x: 1548, y: 2018}
   - name: Nuke_Exe_Frame_5
     originalName: 
-    pivot: {x: -0.35999998, y: -7.5882354}
+    pivot: {x: -2.7392066, y: -2.8766844}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 1436
-      y: 3092
+      x: 1139
+      y: 7990
       width: 100
       height: 119
     spriteID: 4553292593ef957479801b73f1a265ea
@@ -240,16 +240,16 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 1436, y: 3092}
+    uvTransform: {x: 1139, y: 7990}
   - name: Nuke_Exe_Frame_6
     originalName: 
-    pivot: {x: -0.3100003, y: -7.546219}
+    pivot: {x: -3.6207628, y: -4.1170993}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 1436
-      y: 3219
+      x: 1247
+      y: 7990
       width: 100
       height: 119
     spriteID: 43e6917bbb945fa47a0f3abba8891fd0
@@ -260,16 +260,16 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 1436, y: 3219}
+    uvTransform: {x: 1247, y: 7990}
   - name: Nuke_Exe_Frame_7
     originalName: 
-    pivot: {x: -0.2500003, y: -7.4957986}
+    pivot: {x: -4.3383093, y: -4.0137315}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 1436
-      y: 3346
+      x: 467
+      y: 8036
       width: 100
       height: 119
     spriteID: 6d63f74d31298a24d869fbf446ae9600
@@ -280,16 +280,16 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 1436, y: 3346}
+    uvTransform: {x: 467, y: 8036}
   - name: Nuke_Exe_Frame_8
     originalName: 
-    pivot: {x: -0.19999969, y: -7.4453783}
+    pivot: {x: -3.5827148, y: -3.7747512}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 543
-      y: 3474
+      x: 575
+      y: 8036
       width: 100
       height: 119
     spriteID: 5538125edd7745f45840a051153986ba
@@ -300,16 +300,16 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 543, y: 3474}
+    uvTransform: {x: 575, y: 8036}
   - name: Nuke_Exe_Frame_9
     originalName: 
-    pivot: {x: -0.13000031, y: -7.3865547}
+    pivot: {x: -3.0206866, y: -3.4310997}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 651
-      y: 3474
+      x: 683
+      y: 8036
       width: 100
       height: 119
     spriteID: 83698492cd7582448a6391a28db4bb92
@@ -320,16 +320,16 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 651, y: 3474}
+    uvTransform: {x: 683, y: 8036}
   - name: Nuke_Exe_Frame_10
     originalName: 
-    pivot: {x: -0.049999695, y: -7.3193283}
+    pivot: {x: -2.8381772, y: -2.4954906}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 759
-      y: 3474
+      x: 1436
+      y: 7724
       width: 100
       height: 119
     spriteID: 9a189ab22cb3b14498729d36ad0d397e
@@ -340,16 +340,16 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 759, y: 3474}
+    uvTransform: {x: 1436, y: 7724}
   - name: Nuke_Exe_Frame_11
     originalName: 
-    pivot: {x: -0.010000305, y: -7.2521005}
+    pivot: {x: -2.4291534, y: -2.1353893}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 867
-      y: 3474
+      x: 1436
+      y: 7851
       width: 100
       height: 119
     spriteID: 1afaa688c59b94446bb0d7202bf59b8f
@@ -360,16 +360,16 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 867, y: 3474}
+    uvTransform: {x: 1436, y: 7851}
   - name: Nuke_Exe_Frame_12
     originalName: 
-    pivot: {x: 0.05000015, y: -7.159664}
+    pivot: {x: -2.1026392, y: -2.3358266}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 975
-      y: 3474
+      x: 1436
+      y: 7978
       width: 100
       height: 119
     spriteID: d741e99aba76a594fb5852d654e848b5
@@ -380,16 +380,16 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 975, y: 3474}
+    uvTransform: {x: 1436, y: 7978}
   - name: Nuke_Exe_Frame_13
     originalName: 
-    pivot: {x: 0.12, y: -7.0840335}
+    pivot: {x: -2.0941405, y: -2.0534606}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 1083
-      y: 3474
+      x: 1548
+      y: 240
       width: 100
       height: 119
     spriteID: 3a006d34045cac0459e0286f48fe4945
@@ -400,16 +400,16 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 1083, y: 3474}
+    uvTransform: {x: 1548, y: 240}
   - name: Nuke_Exe_Frame_14
     originalName: 
-    pivot: {x: 0.18999985, y: -7.0084033}
+    pivot: {x: -1.7166224, y: -1.8055512}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 1191
-      y: 3474
+      x: 1548
+      y: 367
       width: 100
       height: 119
     spriteID: 4be40be96fc5a574fb27e4b2a0d00f36
@@ -420,16 +420,16 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 1191, y: 3474}
+    uvTransform: {x: 1548, y: 367}
   - name: Nuke_Exe_Frame_15
     originalName: 
-    pivot: {x: 0.26000014, y: -6.92437}
+    pivot: {x: -1.5296314, y: -1.7913213}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 1299
-      y: 3474
+      x: 1548
+      y: 494
       width: 100
       height: 119
     spriteID: b62e63ba51aaf1b4580d8389a59f984b
@@ -440,16 +440,16 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 1299, y: 3474}
+    uvTransform: {x: 1548, y: 494}
   - name: Nuke_Exe_Frame_16
     originalName: 
-    pivot: {x: 0.33999985, y: -6.8403363}
+    pivot: {x: -1.5296289, y: -1.6707261}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 1407
-      y: 3474
+      x: 1548
+      y: 621
       width: 100
       height: 119
     spriteID: 77c2b47942fa5f94ea5a6b90a5e2394b
@@ -460,16 +460,16 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 1407, y: 3474}
+    uvTransform: {x: 1548, y: 621}
   - name: Nuke_Exe_Frame_17
     originalName: 
-    pivot: {x: 0.45, y: -6.739496}
+    pivot: {x: -1.5181248, y: -1.123172}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 4
-      y: 3710
+      x: 1548
+      y: 748
       width: 100
       height: 119
     spriteID: e996a3e1235e1ea4b9e3d977dd34e0ba
@@ -480,16 +480,16 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 3710}
+    uvTransform: {x: 1548, y: 748}
   - name: Nuke_Exe_Frame_18
     originalName: 
-    pivot: {x: 0.5000001, y: -6.663866}
+    pivot: {x: -1.4271228, y: -1.1509097}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 112
-      y: 3710
+      x: 1548
+      y: 875
       width: 100
       height: 119
     spriteID: 3266481db15a9414ca16a140b5c4501d
@@ -500,16 +500,16 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 112, y: 3710}
+    uvTransform: {x: 1548, y: 875}
   - name: Nuke_Exe_Frame_19
     originalName: 
-    pivot: {x: 0.57999986, y: -6.605042}
+    pivot: {x: -1.0601045, y: -1.0920862}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 220
-      y: 3710
+      x: 1548
+      y: 1002
       width: 100
       height: 119
     spriteID: 61b7eeceb5d61a04ba3246be70acf759
@@ -520,16 +520,16 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 220, y: 3710}
+    uvTransform: {x: 1548, y: 1002}
   - name: Nuke_Exe_Frame_20
     originalName: 
-    pivot: {x: 0.65000015, y: -6.529412}
+    pivot: {x: -0.9901042, y: -0.91308796}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 328
-      y: 3710
+      x: 1548
+      y: 1129
       width: 100
       height: 119
     spriteID: 5534a7ef27fd19546b6c2ee095fa5c07
@@ -540,16 +540,16 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 328, y: 3710}
+    uvTransform: {x: 1548, y: 1129}
   - name: Nuke_Exe_Frame_21
     originalName: 
-    pivot: {x: 0.65000015, y: -6.529412}
+    pivot: {x: -0.66208375, y: -0.58575493}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 436
-      y: 3710
+      x: 1548
+      y: 1256
       width: 100
       height: 119
     spriteID: 8b5e79deb51d8dd47baf1c214973d694
@@ -560,16 +560,16 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 436, y: 3710}
+    uvTransform: {x: 1548, y: 1256}
   - name: Nuke_Exe_Frame_22
     originalName: 
-    pivot: {x: 0.6999998, y: -6.4789915}
+    pivot: {x: -0.61208373, y: -0.655932}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 544
-      y: 3710
+      x: 1548
+      y: 1383
       width: 100
       height: 119
     spriteID: 283dcf31a9740124b8a689afa91790d8
@@ -580,16 +580,16 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 544, y: 3710}
+    uvTransform: {x: 1548, y: 1383}
   - name: Nuke_Exe_Frame_23
     originalName: 
-    pivot: {x: 0.75, y: -6.4033613}
+    pivot: {x: -0.43907654, y: -0.47693384}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 652
-      y: 3710
+      x: 1548
+      y: 1510
       width: 100
       height: 119
     spriteID: 67f89e0d627b6b74083cf32443138d7b
@@ -600,16 +600,16 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 652, y: 3710}
+    uvTransform: {x: 1548, y: 1510}
   - name: Nuke_Exe_Frame_24
     originalName: 
-    pivot: {x: 0.81, y: -6.327731}
+    pivot: {x: -0.33807313, y: -0.36684695}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 760
-      y: 3710
+      x: 1548
+      y: 1637
       width: 100
       height: 119
     spriteID: 11fa5fb3fdff1ab41887ccf45897870d
@@ -620,16 +620,16 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 760, y: 3710}
+    uvTransform: {x: 1548, y: 1637}
   - name: Nuke_Exe_Frame_25
     originalName: 
-    pivot: {x: 0.87, y: -6.277311}
+    pivot: {x: -0.17556702, y: -0.2991974}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 868
-      y: 3710
+      x: 1548
+      y: 1764
       width: 100
       height: 119
     spriteID: 9b974d03f4745934c9fdaae336b1fe81
@@ -640,16 +640,16 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 868, y: 3710}
+    uvTransform: {x: 1548, y: 1764}
   - name: Nuke_Exe_Frame_26
     originalName: 
-    pivot: {x: 0.90999985, y: -6.210084}
+    pivot: {x: 0.007940674, y: -0.14583197}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 976
-      y: 3710
+      x: 1548
+      y: 1891
       width: 100
       height: 119
     spriteID: f0f1e8223481c4744a85316c2ef26940
@@ -660,16 +660,16 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 976, y: 3710}
+    uvTransform: {x: 1548, y: 1891}
   - name: Nuke_Exe_Frame_27
     originalName: 
-    pivot: {x: 0.9274192, y: -4.9172416}
+    pivot: {x: 0.36528656, y: 0.29998654}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 411
-      y: 3474
+      x: 993
+      y: 8014
       width: 124
       height: 145
     spriteID: 45a1b9b2cfcec7b499a159e8147612f7
@@ -680,16 +680,16 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 411, y: 3474}
+    uvTransform: {x: 993, y: 8014}
   - name: Nuke_Exe_Frame_28
     originalName: 
-    pivot: {x: 0.8421053, y: -4.7651005}
+    pivot: {x: 0.41049936, y: 0.4359008}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 251
-      y: 3474
+      x: 833
+      y: 8014
       width: 152
       height: 149
     spriteID: 5e18104dfee49624a8afc43f41c517cd
@@ -700,16 +700,16 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 251, y: 3474}
+    uvTransform: {x: 833, y: 8014}
   - name: Nuke_Exe_Frame_29
     originalName: 
-    pivot: {x: 0.665272, y: -2.9078948}
+    pivot: {x: 0.4336675, y: 0.45503852}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 4
-      y: 3474
+      x: 1548
+      y: 4
       width: 239
       height: 228
     spriteID: 6da0fd71c28d1d744b78ddc5c9ab4606
@@ -720,16 +720,16 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 3474}
+    uvTransform: {x: 1548, y: 4}
   - name: Nuke_Exe_Frame_30
     originalName: 
-    pivot: {x: 0.7058824, y: -2.4612403}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 1139
-      y: 3092
+      y: 7724
       width: 289
       height: 258
     spriteID: f242a9d366b2cd744b01b5b6aca40103
@@ -740,16 +740,16 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 1139, y: 3092}
+    uvTransform: {x: 1139, y: 7724}
   - name: Nuke_Exe_Frame_31
     originalName: 
-    pivot: {x: 0.7080536, y: -2.2198582}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 833
-      y: 3092
+      y: 7724
       width: 298
       height: 282
     spriteID: a037b002b3e01ba44a7cc21253d2a0e1
@@ -760,16 +760,16 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 833, y: 3092}
+    uvTransform: {x: 833, y: 7724}
   - name: Nuke_Exe_Frame_32
     originalName: 
-    pivot: {x: 0.6703911, y: -2.036184}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 467
-      y: 3092
+      y: 7724
       width: 358
       height: 304
     spriteID: ed3b7aefb91469541b58cb5724eaa66f
@@ -780,16 +780,16 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 467, y: 3092}
+    uvTransform: {x: 467, y: 7724}
   - name: Nuke_Exe_Frame_33
     originalName: 
-    pivot: {x: 0.5626373, y: -1.5454545}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
-      y: 3092
+      y: 7724
       width: 455
       height: 374
     spriteID: 000138e6dd4856b4b8d0309f6ba8c93a
@@ -800,11 +800,11 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 3092}
+    uvTransform: {x: 4, y: 7724}
   - name: Nuke_Exe_Frame_34
     originalName: 
-    pivot: {x: 0.5, y: 0}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -823,8 +823,8 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 4}
   - name: Nuke_Exe_Frame_35
     originalName: 
-    pivot: {x: 0.5, y: 0}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -843,13 +843,13 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 1548}
   - name: Nuke_Exe_Frame_36
     originalName: 
-    pivot: {x: 0.5, y: 0}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 1548
-      y: 4
+      x: 4
+      y: 3092
       width: 1536
       height: 1536
     spriteID: 6eb9e66bb8e8eef458b898c20c9d9a07
@@ -860,7 +860,47 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 1548, y: 4}
+    uvTransform: {x: 4, y: 3092}
+  - name: Nuke_Exe_Frame_37
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4636
+      width: 1536
+      height: 1536
+    spriteID: 61bb4b6dde55a4445a358974595cf5cb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4636}
+  - name: Nuke_Exe_Frame_38
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 6180
+      width: 1536
+      height: 1536
+    spriteID: 760351e8a45c5dd44a2c8a0e586dbe81
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 6180}
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
@@ -1166,6 +1206,22 @@ ScriptedImporter:
         width: 1536
         height: 1536
       spriteId: 6eb9e66bb8e8eef458b898c20c9d9a07
+    - name: Nuke_Exe_Frame_37
+      frameIndex: 37
+      cellRect:
+        x: 0
+        y: 0
+        width: 1536
+        height: 1536
+      spriteId: 61bb4b6dde55a4445a358974595cf5cb
+    - name: Nuke_Exe_Frame_38
+      frameIndex: 38
+      cellRect:
+        x: 0
+        y: 0
+        width: 1536
+        height: 1536
+      spriteId: 760351e8a45c5dd44a2c8a0e586dbe81
     linkedCells: []
     parentIndex: -1
   platformSettings: []

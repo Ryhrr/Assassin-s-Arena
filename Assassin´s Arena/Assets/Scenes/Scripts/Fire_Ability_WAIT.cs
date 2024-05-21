@@ -18,10 +18,6 @@ public class Fire_Ability_WAIT : MonoBehaviour
     void Update()
     {
         
-        if(abiltiy_DMG.ble_Ice_Aktive == true)
-        {
-            
-        }
 
 
     }
