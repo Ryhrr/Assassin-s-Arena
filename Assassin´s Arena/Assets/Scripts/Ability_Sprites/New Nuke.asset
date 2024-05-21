@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ccf99d93760b7c4ab9524c44edd57ad, type: 3}
   m_Name: New Nuke
   m_EditorClassIdentifier: 
-  name: 
-  cooldownTime: 0
-  activeTime: 0
-  nuke: {fileID: 0}
-  Range: 0
+  name: Nuke
+  cooldownTime: 1
+  activeTime: 4
+  nuke: {fileID: 5037889258097142476, guid: 8155a8e682f99854ea9c20f661d7428a, type: 3}
+  Range: 1
