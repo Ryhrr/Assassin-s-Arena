@@ -123,15 +123,15 @@ ScriptedImporter:
   animatedSpriteImportData:
   - name: Fireability_CD2_Frame_0
     originalName: 
-    pivot: {x: 0.25, y: 0}
+    pivot: {x: 0.49999997, y: -2}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 32
-      height: 32
+      width: 16
+      height: 16
     spriteID: 1bd7b3daef1e39943983ebbc04e572cd
     spriteBone: []
     spriteOutline: []
@@ -143,15 +143,15 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 4}
   - name: Fireability_CD2_Frame_1
     originalName: 
-    pivot: {x: 0.25, y: 0}
+    pivot: {x: 0.49999997, y: -2}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
-      y: 44
-      width: 32
-      height: 32
+      y: 28
+      width: 16
+      height: 16
     spriteID: 23d8092c7b06ca243a5577d2c0ab1946
     spriteBone: []
     spriteOutline: []
@@ -160,18 +160,18 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 44}
+    uvTransform: {x: 4, y: 28}
   - name: Fireability_CD2_Frame_2
     originalName: 
-    pivot: {x: 0.25, y: 0}
+    pivot: {x: 0.49999997, y: -2}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
-      y: 84
-      width: 32
-      height: 32
+      y: 52
+      width: 16
+      height: 16
     spriteID: 0f554f37a77901144bb37852f0bf6e27
     spriteBone: []
     spriteOutline: []
@@ -180,18 +180,18 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 84}
+    uvTransform: {x: 4, y: 52}
   - name: Fireability_CD2_Frame_3
     originalName: 
-    pivot: {x: 0.25, y: 0}
+    pivot: {x: 0.49999997, y: -2}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
-      y: 124
-      width: 32
-      height: 32
+      y: 76
+      width: 16
+      height: 16
     spriteID: c17068128b7951e4393ff277034a9fe2
     spriteBone: []
     spriteOutline: []
@@ -200,18 +200,18 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 124}
+    uvTransform: {x: 4, y: 76}
   - name: Fireability_CD2_Frame_4
     originalName: 
-    pivot: {x: 0.25, y: 0}
+    pivot: {x: 0.49999997, y: -2}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
-      y: 164
-      width: 32
-      height: 32
+      y: 100
+      width: 16
+      height: 16
     spriteID: e9a36775dd2dab642a5244561ffdcdc5
     spriteBone: []
     spriteOutline: []
@@ -220,18 +220,18 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 164}
+    uvTransform: {x: 4, y: 100}
   - name: Fireability_CD2_Frame_5
     originalName: 
-    pivot: {x: 0.25, y: 0}
+    pivot: {x: 0.49999997, y: -2}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 4
-      y: 204
-      width: 32
-      height: 32
+      x: 28
+      y: 4
+      width: 16
+      height: 16
     spriteID: 8dcc0a29ed652924aa1c5e4d3c636379
     spriteBone: []
     spriteOutline: []
@@ -240,18 +240,18 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 204}
+    uvTransform: {x: 28, y: 4}
   - name: Fireability_CD2_Frame_6
     originalName: 
-    pivot: {x: 0.25, y: 0}
+    pivot: {x: 0.49999997, y: -2}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 44
-      y: 4
-      width: 32
-      height: 32
+      x: 28
+      y: 28
+      width: 16
+      height: 16
     spriteID: 08a5502aa66abdf4b8b98ccf27c4c458
     spriteBone: []
     spriteOutline: []
@@ -260,18 +260,18 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 44, y: 4}
+    uvTransform: {x: 28, y: 28}
   - name: Fireability_CD2_Frame_7
     originalName: 
-    pivot: {x: 0.25, y: 0}
+    pivot: {x: 0.49999997, y: -2}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 44
-      y: 44
-      width: 32
-      height: 32
+      x: 28
+      y: 52
+      width: 16
+      height: 16
     spriteID: 86486db92f1baa84cb59484bbbe482f8
     spriteBone: []
     spriteOutline: []
@@ -280,18 +280,18 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 44, y: 44}
+    uvTransform: {x: 28, y: 52}
   - name: Fireability_CD2_Frame_8
     originalName: 
-    pivot: {x: 0.25, y: 0}
+    pivot: {x: 0.49999997, y: -2}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 44
-      y: 84
-      width: 32
-      height: 32
+      x: 28
+      y: 76
+      width: 16
+      height: 16
     spriteID: a6c643bb24e7fa745bfa90ace9cb3f74
     spriteBone: []
     spriteOutline: []
@@ -300,18 +300,18 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 44, y: 84}
+    uvTransform: {x: 28, y: 76}
   - name: Fireability_CD2_Frame_9
     originalName: 
-    pivot: {x: 0.25, y: 0}
+    pivot: {x: 0.49999997, y: -2}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 44
-      y: 124
-      width: 32
-      height: 32
+      x: 28
+      y: 100
+      width: 16
+      height: 16
     spriteID: 6f04cd2152d19804597a05bbde03bfe2
     spriteBone: []
     spriteOutline: []
@@ -320,18 +320,18 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 44, y: 124}
+    uvTransform: {x: 28, y: 100}
   - name: Fireability_CD2_Frame_10
     originalName: 
-    pivot: {x: 0.25, y: 0}
+    pivot: {x: 0.49999997, y: -2}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 44
-      y: 164
-      width: 32
-      height: 32
+      x: 52
+      y: 4
+      width: 16
+      height: 16
     spriteID: fd36189d81d71a547ba4bc32530c94cb
     spriteBone: []
     spriteOutline: []
@@ -340,18 +340,18 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 44, y: 164}
+    uvTransform: {x: 52, y: 4}
   - name: Fireability_CD2_Frame_11
     originalName: 
-    pivot: {x: 0.25, y: 0}
+    pivot: {x: 0.49999997, y: -2}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 44
-      y: 204
-      width: 32
-      height: 32
+      x: 52
+      y: 28
+      width: 16
+      height: 16
     spriteID: 736596351c1909845b150cdb06413af7
     spriteBone: []
     spriteOutline: []
@@ -360,18 +360,18 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 44, y: 204}
+    uvTransform: {x: 52, y: 28}
   - name: Fireability_CD2_Frame_12
     originalName: 
-    pivot: {x: 0.25, y: 0}
+    pivot: {x: 0.49999997, y: -2}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 84
-      y: 4
-      width: 32
-      height: 32
+      x: 52
+      y: 52
+      width: 16
+      height: 16
     spriteID: 4b2eee3f7563ae14a82353ccc171d6a1
     spriteBone: []
     spriteOutline: []
@@ -380,18 +380,18 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 84, y: 4}
+    uvTransform: {x: 52, y: 52}
   - name: Fireability_CD2_Frame_13
     originalName: 
-    pivot: {x: 0.25, y: 0}
+    pivot: {x: 0.49999997, y: -2}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 84
-      y: 44
-      width: 32
-      height: 32
+      x: 52
+      y: 76
+      width: 16
+      height: 16
     spriteID: 411a37fb55a48ec47b35d1a654d5f2c3
     spriteBone: []
     spriteOutline: []
@@ -400,18 +400,18 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 84, y: 44}
+    uvTransform: {x: 52, y: 76}
   - name: Fireability_CD2_Frame_14
     originalName: 
-    pivot: {x: 0.25, y: 0}
+    pivot: {x: 0.49999997, y: -2}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 84
-      y: 84
-      width: 32
-      height: 32
+      x: 52
+      y: 100
+      width: 16
+      height: 16
     spriteID: 67273f32bee9ff740b5423abf10e2d75
     spriteBone: []
     spriteOutline: []
@@ -420,18 +420,18 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 84, y: 84}
+    uvTransform: {x: 52, y: 100}
   - name: Fireability_CD2_Frame_15
     originalName: 
-    pivot: {x: 0.25, y: 0}
+    pivot: {x: 0.49999997, y: -2}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 84
-      y: 124
-      width: 32
-      height: 32
+      x: 76
+      y: 4
+      width: 16
+      height: 16
     spriteID: 56db5e38af3ce814694b7387e3819186
     spriteBone: []
     spriteOutline: []
@@ -440,7 +440,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 84, y: 124}
+    uvTransform: {x: 76, y: 4}
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
@@ -453,130 +453,130 @@ ScriptedImporter:
     - name: Fireability_CD2_Frame_0
       frameIndex: 0
       cellRect:
-        x: 0
-        y: 0
-        width: 32
-        height: 32
+        x: 32
+        y: 32
+        width: 16
+        height: 16
       spriteId: 1bd7b3daef1e39943983ebbc04e572cd
     - name: Fireability_CD2_Frame_1
       frameIndex: 1
       cellRect:
-        x: 0
-        y: 0
-        width: 32
-        height: 32
+        x: 32
+        y: 32
+        width: 16
+        height: 16
       spriteId: 23d8092c7b06ca243a5577d2c0ab1946
     - name: Fireability_CD2_Frame_2
       frameIndex: 2
       cellRect:
-        x: 0
-        y: 0
-        width: 32
-        height: 32
+        x: 32
+        y: 32
+        width: 16
+        height: 16
       spriteId: 0f554f37a77901144bb37852f0bf6e27
     - name: Fireability_CD2_Frame_3
       frameIndex: 3
       cellRect:
-        x: 0
-        y: 0
-        width: 32
-        height: 32
+        x: 32
+        y: 32
+        width: 16
+        height: 16
       spriteId: c17068128b7951e4393ff277034a9fe2
     - name: Fireability_CD2_Frame_4
       frameIndex: 4
       cellRect:
-        x: 0
-        y: 0
-        width: 32
-        height: 32
+        x: 32
+        y: 32
+        width: 16
+        height: 16
       spriteId: e9a36775dd2dab642a5244561ffdcdc5
     - name: Fireability_CD2_Frame_5
       frameIndex: 5
       cellRect:
-        x: 0
-        y: 0
-        width: 32
-        height: 32
+        x: 32
+        y: 32
+        width: 16
+        height: 16
       spriteId: 8dcc0a29ed652924aa1c5e4d3c636379
     - name: Fireability_CD2_Frame_6
       frameIndex: 6
       cellRect:
-        x: 0
-        y: 0
-        width: 32
-        height: 32
+        x: 32
+        y: 32
+        width: 16
+        height: 16
       spriteId: 08a5502aa66abdf4b8b98ccf27c4c458
     - name: Fireability_CD2_Frame_7
       frameIndex: 7
       cellRect:
-        x: 0
-        y: 0
-        width: 32
-        height: 32
+        x: 32
+        y: 32
+        width: 16
+        height: 16
       spriteId: 86486db92f1baa84cb59484bbbe482f8
     - name: Fireability_CD2_Frame_8
       frameIndex: 8
       cellRect:
-        x: 0
-        y: 0
-        width: 32
-        height: 32
+        x: 32
+        y: 32
+        width: 16
+        height: 16
       spriteId: a6c643bb24e7fa745bfa90ace9cb3f74
     - name: Fireability_CD2_Frame_9
       frameIndex: 9
       cellRect:
-        x: 0
-        y: 0
-        width: 32
-        height: 32
+        x: 32
+        y: 32
+        width: 16
+        height: 16
       spriteId: 6f04cd2152d19804597a05bbde03bfe2
     - name: Fireability_CD2_Frame_10
       frameIndex: 10
       cellRect:
-        x: 0
-        y: 0
-        width: 32
-        height: 32
+        x: 32
+        y: 32
+        width: 16
+        height: 16
       spriteId: fd36189d81d71a547ba4bc32530c94cb
     - name: Fireability_CD2_Frame_11
       frameIndex: 11
       cellRect:
-        x: 0
-        y: 0
-        width: 32
-        height: 32
+        x: 32
+        y: 32
+        width: 16
+        height: 16
       spriteId: 736596351c1909845b150cdb06413af7
     - name: Fireability_CD2_Frame_12
       frameIndex: 12
       cellRect:
-        x: 0
-        y: 0
-        width: 32
-        height: 32
+        x: 32
+        y: 32
+        width: 16
+        height: 16
       spriteId: 4b2eee3f7563ae14a82353ccc171d6a1
     - name: Fireability_CD2_Frame_13
       frameIndex: 13
       cellRect:
-        x: 0
-        y: 0
-        width: 32
-        height: 32
+        x: 32
+        y: 32
+        width: 16
+        height: 16
       spriteId: 411a37fb55a48ec47b35d1a654d5f2c3
     - name: Fireability_CD2_Frame_14
       frameIndex: 14
       cellRect:
-        x: 0
-        y: 0
-        width: 32
-        height: 32
+        x: 32
+        y: 32
+        width: 16
+        height: 16
       spriteId: 67273f32bee9ff740b5423abf10e2d75
     - name: Fireability_CD2_Frame_15
       frameIndex: 15
       cellRect:
-        x: 0
-        y: 0
-        width: 32
-        height: 32
+        x: 32
+        y: 32
+        width: 16
+        height: 16
       spriteId: 56db5e38af3ce814694b7387e3819186
     linkedCells: []
     parentIndex: -1
@@ -584,4 +584,4 @@ ScriptedImporter:
   generatePhysicsShape: 0
   secondarySpriteTextures: []
   spritePackingTag: 
-  canvasSize: {x: 16, y: 16}
+  canvasSize: {x: 80, y: 80}

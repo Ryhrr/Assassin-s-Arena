@@ -5,13 +5,13 @@ using UnityEngine;
 public class Destroy : MonoBehaviour
 {
     [SerializeField]
-    float Destroy_time = 10;
+    float destroyTime = 10; 
 
     void Start()
     {
-
-        Destroy(gameObject,Destroy_time);
-
+        Destroy(gameObject, destroyTime); 
     }
 
+
 }
+

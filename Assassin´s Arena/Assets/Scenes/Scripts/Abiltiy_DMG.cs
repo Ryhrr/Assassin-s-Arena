@@ -15,7 +15,6 @@ public class Abiltiy_DMG : MonoBehaviour
     [SerializeField] int idmg = 5;
     float timer = 0;
     double attackTime = 1;
-    public bool ble_Ice_Aktive = true;
    
 
     void Start()
@@ -100,7 +99,6 @@ public class Abiltiy_DMG : MonoBehaviour
                 }
                 else
                 {
-                    // Adjust speed to the first enemy left in the list
                     Enem_Controlls[0].speed = fslow;
                 }
             }
