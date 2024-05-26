@@ -149,7 +149,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 435983313fcccf14ea01357b83860c4f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Destroy_time: 10
+  destroyTime: 10
 --- !u!60 &5130441737551419694
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -226,4 +226,3 @@ MonoBehaviour:
   Enem_HPs: []
   fslow: 2
   idmg: 5
-  f_dmg_Ticks_Max: 100

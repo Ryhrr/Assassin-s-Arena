@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: New Ice Spikes
   m_EditorClassIdentifier: 
   name: Ice Spikes
-  cooldownTime: 10
+  cooldownTime: 15
   activeTime: 6
   Spawn_cube: {fileID: 4935078255698603463, guid: 04b9ce4e8c429544bbb1762769970d78, type: 3}
   Range: 3

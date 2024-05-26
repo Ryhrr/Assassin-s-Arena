@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: New Fire Ring
   m_EditorClassIdentifier: 
   name: Fire Ring
-  cooldownTime: 10
+  cooldownTime: 15
   activeTime: 5
   Spawn_Fire_cube: {fileID: 6402855371277667088, guid: 42ba64f9a0ddc214a92ea052ee7d8ff8, type: 3}
   Range: 1

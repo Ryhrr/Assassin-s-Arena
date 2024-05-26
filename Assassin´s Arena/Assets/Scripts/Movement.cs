@@ -77,10 +77,12 @@ public class NewBehaviourScript : MonoBehaviour
         }
         else
         {
+
             myRidgidbody.velocity = new Vector2(MoveHorizontal * MoveSpeed, myRidgidbody.velocity.y);
 
 
             myRidgidbody.velocity = new Vector2(MoveVertical * MoveSpeed, myRidgidbody.velocity.x);
+
         }
 
 

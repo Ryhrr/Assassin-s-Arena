@@ -21,12 +21,20 @@ public class CD_Dings : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Q))
         {
-
+            anim.SetBool("Fire", true); 
+        }
+        else
+        {
+            anim.SetBool("Fire", false);
         }
 
         if (Input.GetKeyDown(KeyCode.E))
         {
-
+            anim.SetBool("Ice", true);
+        }
+        else
+        {
+            anim.SetBool("Ice", false);
         }
 
         if (Input.GetKeyDown(KeyCode.R))
@@ -38,6 +46,8 @@ public class CD_Dings : MonoBehaviour
         {
 
         }
+
+
 
     }
 }
