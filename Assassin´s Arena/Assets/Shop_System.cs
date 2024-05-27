@@ -235,7 +235,7 @@ public class Shop_System : MonoBehaviour
         {
             return blueMagePrice;
         }
-        else if (activePanel == blueMagePanel)
+        else if (activePanel == blackMagePanel)
         {
             return blackMagePrice;
         }
