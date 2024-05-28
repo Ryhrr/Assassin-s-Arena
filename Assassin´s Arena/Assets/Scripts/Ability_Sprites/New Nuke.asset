@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: New Nuke
   m_EditorClassIdentifier: 
   name: Nuke
-  cooldownTime: 1
-  activeTime: 4
+  cooldownTime: 1e+11
+  activeTime: 1e+19
   nuke: {fileID: 5037889258097142476, guid: 8155a8e682f99854ea9c20f661d7428a, type: 3}
   Range: 1

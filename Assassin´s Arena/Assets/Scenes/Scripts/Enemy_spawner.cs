@@ -7,8 +7,7 @@ using static UnityEngine.GraphicsBuffer;
 
 public class EnemySpawner : MonoBehaviour
 {
-    [SerializeField] private float spawnRate = 2.1f;
-    [SerializeField] private float Time_between_Waves = 3f;
+    [SerializeField] private float spawnRate = 5f;
     [SerializeField] private GameObject[] enemyPrefabs;
     [SerializeField] private bool spawn = true;
     [SerializeField] private float spawnRange = 100f;
@@ -17,9 +16,11 @@ public class EnemySpawner : MonoBehaviour
 
     private Transform playerTransform;
     private int enemyCount = 0;
-    private int maxEnemies = 5;
-    private int Welle = 0;
+    private int maxEnemies = 1;
+    public static int Welle = 1;
     public static int Welletxt;
+    float allEnemys = 0;
+    
 
     void Start()
     {
@@ -31,12 +32,11 @@ public class EnemySpawner : MonoBehaviour
     {
         while (spawn)
         {
-           
+
             Enemy_Health.Kills_this_Round = 0;
 
             do
             {
-               
 
                 yield return new WaitForSeconds(spawnRate);
 
@@ -50,44 +50,142 @@ public class EnemySpawner : MonoBehaviour
 
                 Instantiate(enemyToSpawn, spawnPosition, Quaternion.identity);
 
-                enemyCount += 1;
+                enemyCount++;
+
+            }while (enemyCount >= maxEnemies);
 
 
-            }while(enemyCount < maxEnemies);
+            enemyCount = 0;
 
-            if (Enemy_Health.Kills_this_Round == maxEnemies)
-            {
-
-
-                // Hier kommt das Icon von der Welle und welche welle
-
-
-            }
-            else
-            {
-                do
-                {
-
-                } while (Enemy_Health.Kills_this_Round == maxEnemies);
-                yield return new WaitForSeconds(Time_between_Waves);
-
-                // Hier kommt ebenfalls das Icon von der Welle und welche welle
-            }
-
-            Welle = Welle+1;
-
-            Welletxt = Welle;
-
-            spawnRate = 2.1f - (Welle/10);
-
-            maxEnemies = 5* Welle;
-
-            if(Welle == 21)
+            if (Welle == 21)
             {
                 spawn = false;
             }
 
-             
+
+            yield return new WaitForSeconds(spawnRate);
+
+            if (Welle == 1)
+            {
+                maxEnemies = 5;
+                spawnRate = 2f;
+                Welle = 2;
+            }
+            else if (Welle == 2)
+            {
+                maxEnemies = 10;
+                spawnRate = 2f;
+                Welle = 3;
+            }
+            else if (Welle == 3)
+            {
+                maxEnemies = 20;
+                spawnRate = 2f;
+                Welle = 4;
+            }
+            else if (Welle == 4)
+            {
+                maxEnemies = 25;
+                spawnRate = 2f;
+                Welle = 5;
+            }
+            else if (Welle == 5)
+            {
+                maxEnemies = 30;
+                spawnRate = 2f;
+                Welle = 6;
+            }
+            else if (Welle == 6)
+            {
+                maxEnemies = 35;
+                spawnRate = 2f;
+                Welle = 7;
+            }
+            else if (Welle == 7)
+            {
+                maxEnemies = 40;
+                spawnRate = 1f;
+                Welle = 8;
+            }
+            else if (Welle == 8)
+            {
+                maxEnemies = 50;
+                spawnRate = 1f;
+                Welle = 9;
+            }
+            else if (Welle == 9)
+            {
+                maxEnemies = 50;
+                spawnRate = 1f;
+                Welle = 10;
+            }
+            else if (Welle == 10)
+            {
+                maxEnemies = 50;
+                spawnRate = 1f;
+                Welle = 11;
+            }
+            else if (Welle == 11)
+            {
+                maxEnemies = 60;
+                spawnRate = 1f;
+                Welle = 12;
+            }
+            else if (Welle == 12)
+            {
+                maxEnemies = 60;
+                spawnRate = 1f;
+                Welle = 13;
+            }
+            else if (Welle == 13)
+            {
+                maxEnemies = 70;
+                spawnRate = 1f;
+                Welle = 14;
+            }
+            else if (Welle == 14)
+            {
+                maxEnemies = 75;
+                spawnRate = 1f;
+                Welle = 15;
+            }
+            else if (Welle == 15)
+            {
+                maxEnemies = 75;
+                spawnRate = 1f;
+                Welle = 16;
+            }
+            else if (Welle == 16)
+            {
+                maxEnemies = 80;
+                spawnRate = 1f;
+                Welle = 17;
+            }
+            else if (Welle == 17)
+            {
+                maxEnemies = 70;
+                spawnRate = 1f;
+                Welle = 18;
+            }
+            else if (Welle == 18)
+            {
+                maxEnemies = 80;
+                spawnRate = 0.5f;
+                Welle = 19;
+            }
+            else if (Welle == 19)
+            {
+                maxEnemies = 90;
+                spawnRate = 0.5f;
+                Welle = 20;
+            }
+            else if (Welle == 20)
+            {
+                maxEnemies = 150;
+                spawnRate = 0.5f;
+                Welle = 21;
+            }
+
         }
     }
 }
