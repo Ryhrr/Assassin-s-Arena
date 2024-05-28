@@ -1955,6 +1955,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1478094500}
+        m_TargetAssemblyTypeName: Mage_Black, Assembly-CSharp
+        m_MethodName: ButoonPressed
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &295713333
 GameObject:
   m_ObjectHideFlags: 0
@@ -6726,9 +6738,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1314274517}
-        m_TargetAssemblyTypeName: Character_Choose, Assembly-CSharp
-        m_MethodName: GreenMageSpawn
+      - m_Target: {fileID: 1478094498}
+        m_TargetAssemblyTypeName: Mage_Green, Assembly-CSharp
+        m_MethodName: ButoonPressed
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -12985,9 +12997,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1314274517}
-        m_TargetAssemblyTypeName: Character_Choose, Assembly-CSharp
-        m_MethodName: RedMageSpawner
+      - m_Target: {fileID: 1478094497}
+        m_TargetAssemblyTypeName: Mage_Red, Assembly-CSharp
+        m_MethodName: ButoonPressed
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -13594,6 +13606,10 @@ GameObject:
   - component: {fileID: 1478094494}
   - component: {fileID: 1478094493}
   - component: {fileID: 1478094492}
+  - component: {fileID: 1478094500}
+  - component: {fileID: 1478094499}
+  - component: {fileID: 1478094498}
+  - component: {fileID: 1478094497}
   - component: {fileID: 1478094496}
   m_Layer: 5
   m_Name: Canvas
@@ -13699,7 +13715,55 @@ MonoBehaviour:
   m_GameObject: {fileID: 1478094491}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 158e9d6fd4aa1d74eb7ea85f7f0afde0, type: 3}
+  m_Script: {fileID: 11500000, guid: 38d87df4a1e684749aeecb79ad43789a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1478094497
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1478094491}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b9e41605b2048f468f8a611cc73f40b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1478094498
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1478094491}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4076740913bc5544c9d0d4f8eeeebfff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1478094499
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1478094491}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2521f794a6db2640b4d85d8374d4e8e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1478094500
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1478094491}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0147b925c78712348a7766861a534cbe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1479934598
@@ -18038,9 +18102,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1314274517}
-        m_TargetAssemblyTypeName: Character_Choose, Assembly-CSharp
-        m_MethodName: BlueMageSpawn
+      - m_Target: {fileID: 1478094499}
+        m_TargetAssemblyTypeName: Mage_Blue, Assembly-CSharp
+        m_MethodName: ButoonPressed
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
