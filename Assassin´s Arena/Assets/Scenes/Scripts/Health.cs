@@ -32,6 +32,7 @@ public class Health : MonoBehaviour
 
         if (currentHealth <= 0)
         {
+            Shop_System.Currency = Shop_System.Currency + Enemy_Health.killchanger;
             //dead :(
             anim.SetBool("Dead", true);
             Behaviour.MoveSpeed = 0;

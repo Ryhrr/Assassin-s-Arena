@@ -71,8 +71,6 @@ public class Pausemenu : MonoBehaviour
 
     public void Gotomain()
     {
-        Shop_System.Currency = Shop_System.Currency + Enemy_Health.killchanger;
-        Shop_System.Currency = Shop_System.Currency + 1000;
         Time.timeScale = 1f;
         pausemenu.SetActive(false);
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
