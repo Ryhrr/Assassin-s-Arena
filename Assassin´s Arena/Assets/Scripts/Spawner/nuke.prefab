@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 7703119643117199649}
   - component: {fileID: 6373607438007898480}
   - component: {fileID: -7516830826688534653}
+  - component: {fileID: 8161949386182687808}
   m_Layer: 0
   m_Name: nuke
   m_TagString: Untagged
@@ -99,7 +100,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 1000
   m_LinearDrag: 0
   m_AngularDrag: 0
   m_GravityScale: 0
@@ -147,4 +148,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 435983313fcccf14ea01357b83860c4f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  destroyTime: 3
+  destroyTime: 4
+--- !u!114 &8161949386182687808
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5037889258097142476}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbd182011b4eed24db375d6c9e895af4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Nuke: 1
