@@ -35,41 +35,54 @@ public class Shop_System : MonoBehaviour
         set { PlayerPrefs.SetInt("BlackMageBought", value ? 1 : 0); }
     }
 
+    public static bool meteorBought
+    {
+        get { return PlayerPrefs.GetInt("meteorbought", 0) == 1; }
+        set { PlayerPrefs.SetInt("meteorbought", value ? 1 : 0); }
+    }
+
     public Text txt_Currency;
     public GameObject redMagePanel;
     public GameObject greenMagePanel;
     public GameObject blueMagePanel;
     public GameObject blackMagePanel;
+    public GameObject meteorPanel;
 
     public GameObject redMageBuyButton;
     public GameObject greenMageBuyButton;
     public GameObject blueMageBuyButton;
     public GameObject blackMageBuyButton;
+    public GameObject meteorBuyButton;
 
     public GameObject redMageOwnedLabel;
     public GameObject greenMageOwnedLabel;
     public GameObject blueMageOwnedLabel;
     public GameObject blackMageOwnedLabel;
+    public GameObject meteorOwnedLabel;
 
     public int redMagePrice;
     public int greenMagePrice;
     public int blueMagePrice;
     public int blackMagePrice;
+    public int meteorPrice;
 
     public GameObject redMagePricetag;
     public GameObject greenMagePricetag;
     public GameObject blueMagePricetag;
     public GameObject blackMagePricetag;
+    public GameObject meteorPricetag;
 
     public Text redMageText;
     public Text greenMageText;
     public Text blueMageText;
     public Text blackMageText;
+    public Text meteorPricetagText;
 
     private GameObject activePanel;
     private GameObject activeBuyButton;
     private GameObject activeOwnedLabel;
     private GameObject activePriceTag;
+    private GameObject activePricetagTag;
 
     private void Start()
     {
@@ -78,6 +91,7 @@ public class Shop_System : MonoBehaviour
         greenMageText.text = greenMagePrice.ToString();
         blueMageText.text = blueMagePrice.ToString();
         blackMageText.text = blackMagePrice.ToString();
+        meteorPricetagText.text = meteorPrice.ToString();
 
         // Lade den Fortschritt beim Spielstart
         LoadProgress();
@@ -107,6 +121,7 @@ public class Shop_System : MonoBehaviour
             blackMageOwnedLabel.SetActive(true);
             blackMagePricetag.SetActive(false);
         }
+        
     }
 
     void Update()
@@ -137,6 +152,22 @@ public class Shop_System : MonoBehaviour
             blackMageOwnedLabel.SetActive(false);
             blackMagePricetag.SetActive(true);
         }
+
+        if (!BlackMageBought)
+        {
+            blackMageBuyButton.SetActive(true);
+            blackMageOwnedLabel.SetActive(false);
+            blackMagePricetag.SetActive(true);
+        }
+
+        if (!meteorBought)
+        {
+            meteorBuyButton.SetActive(true);
+            meteorOwnedLabel.SetActive(false);
+            meteorPricetag.SetActive(true);
+        }
+
+
 
         // Aktualisiere die Anzeige der Münzen
         txt_Currency.text = Currency.ToString();
@@ -173,6 +204,13 @@ public class Shop_System : MonoBehaviour
             activeBuyButton = blackMageBuyButton;
             activeOwnedLabel = blackMageOwnedLabel;
             activePriceTag = blackMagePricetag;
+        }
+        else if (meteorPanel.activeSelf)
+        {
+            activePanel = meteorPanel;
+            activeBuyButton = meteorBuyButton;
+            activeOwnedLabel = meteorOwnedLabel;
+            activePriceTag = meteorPricetag;
         }
         else
         {
@@ -213,6 +251,10 @@ public class Shop_System : MonoBehaviour
             {
                 BlackMageBought = true;
             }
+            else if (activePanel == meteorPanel)
+            {
+                BlackMageBought = true;
+            }
 
             // Speichere den Fortschritt
             SaveProgress();
@@ -238,6 +280,10 @@ public class Shop_System : MonoBehaviour
         else if (activePanel == blackMagePanel)
         {
             return blackMagePrice;
+        }
+        else if (activePanel == meteorPanel)
+        {
+            return meteorPrice;
         }
         return 0;
     }
