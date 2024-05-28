@@ -1,10 +1,9 @@
-using System.Diagnostics.Contracts;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class Shop_System : MonoBehaviour
 {
-    // Die Werte werden von PlayerPrefs geladen und gespeichert
+    // The values are loaded and saved from PlayerPrefs
     public static int Currency
     {
         get { return PlayerPrefs.GetInt("Currency", 0); }
@@ -35,13 +34,16 @@ public class Shop_System : MonoBehaviour
         set { PlayerPrefs.SetInt("BlackMageBought", value ? 1 : 0); }
     }
 
-    public static bool meteorBought
+    public static int MeteorCount
     {
-        get { return PlayerPrefs.GetInt("meteorbought", 0) == 1; }
-        set { PlayerPrefs.SetInt("meteorbought", value ? 1 : 0); }
+        get { return PlayerPrefs.GetInt("MeteorCount", 0); }
+        set { PlayerPrefs.SetInt("MeteorCount", value); }
     }
 
+  
     public Text txt_Currency;
+    public Text txt_MeteorCount; // Add a Text component to display the meteor count
+
     public GameObject redMagePanel;
     public GameObject greenMagePanel;
     public GameObject blueMagePanel;
@@ -58,7 +60,6 @@ public class Shop_System : MonoBehaviour
     public GameObject greenMageOwnedLabel;
     public GameObject blueMageOwnedLabel;
     public GameObject blackMageOwnedLabel;
-    public GameObject meteorOwnedLabel;
 
     public int redMagePrice;
     public int greenMagePrice;
@@ -82,21 +83,20 @@ public class Shop_System : MonoBehaviour
     private GameObject activeBuyButton;
     private GameObject activeOwnedLabel;
     private GameObject activePriceTag;
-    private GameObject activePricetagTag;
 
     private void Start()
     {
-        // Setze die Texte der Preise
+        // Set the price texts
         redMageText.text = redMagePrice.ToString();
         greenMageText.text = greenMagePrice.ToString();
         blueMageText.text = blueMagePrice.ToString();
         blackMageText.text = blackMagePrice.ToString();
         meteorPricetagText.text = meteorPrice.ToString();
 
-        // Lade den Fortschritt beim Spielstart
+        // Load progress at the start of the game
         LoadProgress();
 
-        // Überprüfe, ob Magier bereits gekauft wurden und aktualisiere die UI entsprechend
+        // Check if mages have been bought and update the UI accordingly
         if (RedMageBought)
         {
             redMageBuyButton.SetActive(false);
@@ -115,18 +115,19 @@ public class Shop_System : MonoBehaviour
             blueMageOwnedLabel.SetActive(true);
             blueMagePricetag.SetActive(false);
         }
-        if (BlackMageBought) 
+        if (BlackMageBought)
         {
             blackMageBuyButton.SetActive(false);
             blackMageOwnedLabel.SetActive(true);
             blackMagePricetag.SetActive(false);
         }
         
+        txt_MeteorCount.text = MeteorCount.ToString(); // Initialize the meteor count display
     }
 
     void Update()
     {
-        LoadProgress();
+        // Update UI for mages that can be bought only once
         if (!RedMageBought)
         {
             redMageBuyButton.SetActive(true);
@@ -145,14 +146,6 @@ public class Shop_System : MonoBehaviour
             blueMageOwnedLabel.SetActive(false);
             blueMagePricetag.SetActive(true);
         }
-
-        if (!BlackMageBought) 
-        { 
-            blackMageBuyButton.SetActive(true);
-            blackMageOwnedLabel.SetActive(false);
-            blackMagePricetag.SetActive(true);
-        }
-
         if (!BlackMageBought)
         {
             blackMageBuyButton.SetActive(true);
@@ -160,23 +153,21 @@ public class Shop_System : MonoBehaviour
             blackMagePricetag.SetActive(true);
         }
 
-        if (!meteorBought)
-        {
-            meteorBuyButton.SetActive(true);
-            meteorOwnedLabel.SetActive(false);
-            meteorPricetag.SetActive(true);
-        }
+        // Meteor button and price tag are always active for buying
+        meteorBuyButton.SetActive(true);
+        meteorPricetag.SetActive(true);
 
-
-
-        // Aktualisiere die Anzeige der Münzen
+        // Update currency display
         txt_Currency.text = Currency.ToString();
+        txt_MeteorCount.text = MeteorCount.ToString(); // Update the meteor count display
+
+        // Check the active panel
         CheckActivePanel();
     }
 
     void CheckActivePanel()
     {
-        // Überprüfe, welches Panel aktiv ist
+        // Check which panel is active
         if (redMagePanel.activeSelf)
         {
             activePanel = redMagePanel;
@@ -209,7 +200,7 @@ public class Shop_System : MonoBehaviour
         {
             activePanel = meteorPanel;
             activeBuyButton = meteorBuyButton;
-            activeOwnedLabel = meteorOwnedLabel;
+            activeOwnedLabel = null; // Meteor doesn't have an owned label
             activePriceTag = meteorPricetag;
         }
         else
@@ -217,54 +208,60 @@ public class Shop_System : MonoBehaviour
             activePanel = null;
             activeBuyButton = null;
             activeOwnedLabel = null;
-            
+            activePriceTag = null;
         }
     }
 
     public void BuyCurrentMage()
     {
         int currentPrice = GetActiveMagePrice();
-        if (activePanel != null && activeBuyButton != null && activeOwnedLabel != null && Currency >= currentPrice)
+        if (activePanel != null && activeBuyButton != null && Currency >= currentPrice)
         {
-            // Deaktiviere den Kaufbutton, das Preis-Tag und aktiviere das "Owned"-Label
-            activeBuyButton.SetActive(false);
-            activeOwnedLabel.SetActive(true);
-            activePriceTag.SetActive(false);
+            if (activePanel == meteorPanel)
+            {
+                // Handle meteor purchase
+                Currency -= currentPrice;
+                MeteorCount++; // Increment the meteor count
+                txt_MeteorCount.text = MeteorCount.ToString();
+                SaveProgress();
+            }
+            else
+            {
+                // Deactivate buy button, price tag, and activate the "owned" label
+                activeBuyButton.SetActive(false);
+                activeOwnedLabel.SetActive(true);
+                activePriceTag.SetActive(false);
 
-            // Ziehe den Preis vom Spielerkonto ab
-            Currency -= currentPrice;
+                // Deduct the price from the player's currency
+                Currency -= currentPrice;
 
-            // Setze die entsprechende Variable, um anzuzeigen, dass der Magier gekauft wurde
-            if (activePanel == redMagePanel)
-            {
-                RedMageBought = true;
-            }
-            else if (activePanel == greenMagePanel)
-            {
-                GreenMageBought = true;
-            }
-            else if (activePanel == blueMagePanel)
-            {
-                BlueMageBought = true;
-            }
-            else if (activePanel == blackMagePanel)
-            {
-                BlackMageBought = true;
-            }
-            else if (activePanel == meteorPanel)
-            {
-                BlackMageBought = true;
-            }
+                // Set the corresponding variable to indicate the mage has been bought
+                if (activePanel == redMagePanel)
+                {
+                    RedMageBought = true;
+                }
+                else if (activePanel == greenMagePanel)
+                {
+                    GreenMageBought = true;
+                }
+                else if (activePanel == blueMagePanel)
+                {
+                    BlueMageBought = true;
+                }
+                else if (activePanel == blackMagePanel)
+                {
+                    BlackMageBought = true;
+                }
 
-            // Speichere den Fortschritt
-            SaveProgress();
+                // Save the progress
+                SaveProgress();
+            }
         }
     }
 
-
     int GetActiveMagePrice()
     {
-        // Gib den Preis des aktiven Magiers zurück
+        // Return the price of the active mage
         if (activePanel == redMagePanel)
         {
             return redMagePrice;
@@ -290,13 +287,13 @@ public class Shop_System : MonoBehaviour
 
     void SaveProgress()
     {
-        // Speichere den Fortschritt
+        // Save the progress
         PlayerPrefs.Save();
     }
 
     void LoadProgress()
     {
-        // Lade den Fortschritt
-        // Hier werden die Daten automatisch geladen, wenn sie vorhanden sind
+        // Load the progress
+        // Data will be loaded automatically if available
     }
 }
