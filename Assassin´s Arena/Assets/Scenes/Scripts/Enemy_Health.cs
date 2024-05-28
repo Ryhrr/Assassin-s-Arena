@@ -18,7 +18,6 @@ public class Enemy_Health : MonoBehaviour
 
     void Start()
     {
-
         currentHealth = maxHealth;
         anim = GetComponent<Animator>();
         controll = GetComponent<EnemyControll>();
@@ -50,26 +49,4 @@ public class Enemy_Health : MonoBehaviour
 
         }
     }
-
-    void Update()
-    {
-        if ( NUKE_truue.nuuke == true)
-        {
-
-            anim.SetBool("dead", true);
-            controll.speed = 0;
-
-            Destroy(gameObject, 1);
-
-            WAIT(); 
-
-            killchanger = killchanger + 1;
-
-            Kills_this_Round = Kills_this_Round + 1;
-
-
-        }
-    }
-
-
 }
