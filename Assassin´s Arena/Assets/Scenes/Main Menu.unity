@@ -8463,56 +8463,31 @@ MonoBehaviour:
   greenMagePanel: {fileID: 1962152745}
   blueMagePanel: {fileID: 1952488144}
   blackMagePanel: {fileID: 1910835696}
-<<<<<<< HEAD
   meteorPanel: {fileID: 1322014772}
-=======
-  meteorPanel: {fileID: 0}
->>>>>>> cffc0e0c796529ec2cc9e5124531acb3e233f545
   redMageBuyButton: {fileID: 1221539511}
   greenMageBuyButton: {fileID: 1967781412}
   blueMageBuyButton: {fileID: 1446456377}
   blackMageBuyButton: {fileID: 1740001993}
-<<<<<<< HEAD
   meteorBuyButton: {fileID: 1690116529}
-=======
-  meteorBuyButton: {fileID: 0}
->>>>>>> cffc0e0c796529ec2cc9e5124531acb3e233f545
   redMageOwnedLabel: {fileID: 1662997993}
   greenMageOwnedLabel: {fileID: 1932742328}
   blueMageOwnedLabel: {fileID: 792096265}
   blackMageOwnedLabel: {fileID: 1803106495}
-<<<<<<< HEAD
   redMagePrice: 500
   greenMagePrice: 800
   blueMagePrice: 1200
   blackMagePrice: 1500
   meteorPrice: 200
-=======
-  meteorOwnedLabel: {fileID: 0}
-  redMagePrice: 200
-  greenMagePrice: 400
-  blueMagePrice: 600
-  blackMagePrice: 1000
-  meteorPrice: 0
->>>>>>> cffc0e0c796529ec2cc9e5124531acb3e233f545
   redMagePricetag: {fileID: 1308207352}
   greenMagePricetag: {fileID: 2049285609}
   blueMagePricetag: {fileID: 143712412}
   blackMagePricetag: {fileID: 1278820141}
-<<<<<<< HEAD
   meteorPricetag: {fileID: 1360937191}
-=======
-  meteorPricetag: {fileID: 0}
->>>>>>> cffc0e0c796529ec2cc9e5124531acb3e233f545
   redMageText: {fileID: 1966999091}
   greenMageText: {fileID: 812756200}
   blueMageText: {fileID: 1479934600}
   blackMageText: {fileID: 874388266}
-<<<<<<< HEAD
   meteorPricetagText: {fileID: 927574379}
-=======
-  meteorPricetagText: {fileID: 0}
->>>>>>> cffc0e0c796529ec2cc9e5124531acb3e233f545
 --- !u!1 &942422946
 GameObject:
   m_ObjectHideFlags: 0
