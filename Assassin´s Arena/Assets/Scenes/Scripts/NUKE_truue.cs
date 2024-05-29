@@ -7,19 +7,36 @@ public class NUKE_truue : MonoBehaviour
 {
    
     public static bool nuuke = false;
-    
+    public Animator animator;
+
     void Start()
     {
         StartCoroutine(WaitAndDisableNuuke());
-        
+        animator = GetComponent<Animator>();
+    }
+
+    private void Update()
+    {
+        if(Shop_System.MeteorCount >= 1)
+        {
+            animator.SetBool("Nuke", true);
+        }
+        else
+        {
+            animator.SetBool("Nuke", false);
+        }
     }
 
     IEnumerator WaitAndDisableNuuke()
     {
-        nuuke = true;
-        yield return new WaitForSeconds(2);
-        nuuke = false;
+        if (Shop_System.MeteorCount >= 1)
+        {
 
+            nuuke = true;
+            yield return new WaitForSeconds(0.5f);
+            nuuke = false;
+
+        }
     }
 }
 
