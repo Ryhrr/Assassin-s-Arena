@@ -16,11 +16,9 @@ public class Ability_Holder : MonoBehaviour
 
     private void Start()
     {
-        animator = GetComponent<Animator>();
+        
 
-        abilitiy = GetComponent<Abilities>();
-
-        transform = GetComponent<Transform>();
+       
     }
 
 

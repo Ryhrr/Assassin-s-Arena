@@ -4,8 +4,7 @@ using UnityEngine.UI;
 public class Deathcounter : MonoBehaviour
 {
     public Text Killcounter;
-    public Text Wellecounter;
-
+  
     private void Start()
     {
         
@@ -13,8 +12,7 @@ public class Deathcounter : MonoBehaviour
     void Update()
     {
         Killcounter.text = Enemy_Health.killchanger.ToString();
-        Wellecounter.text = EnemySpawner.Welletxt.ToString();
-
+     
 
         if (Enemy_Health.killchanger < 10)
         {
